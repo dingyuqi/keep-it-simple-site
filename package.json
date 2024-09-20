@@ -24,6 +24,7 @@
     "vuepress-theme-plume": "1.0.0-rc.100"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.3.1",
     "mermaid": "^11.2.1"
   }
 }
