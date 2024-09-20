@@ -36,5 +36,6 @@ config:
         title: 数据挖掘
         icon: 🚀
         details: 基础概念和算法
+  - type: blog
       
 ---
