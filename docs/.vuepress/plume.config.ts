@@ -1,9 +1,6 @@
 import { defineThemeConfig } from 'vuepress-theme-plume'
 import { enNavbar, zhNavbar } from './navbar'
 import { enNotes, zhNotes } from './notes'
-import { inject } from '@vercel/analytics';
- 
-inject();
 
 /**
  * @see https://theme-plume.vuejs.press/config/basic/
