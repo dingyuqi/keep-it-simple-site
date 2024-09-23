@@ -3,6 +3,9 @@ import RepoCard from 'vuepress-theme-plume/features/RepoCard.vue'
 import CustomComponent from './theme/components/Custom.vue'
 
 import './theme/styles/custom.css'
+import { inject } from '@vercel/analytics';
+ 
+inject();
 
 export default defineClientConfig({
   enhance({ app }) {

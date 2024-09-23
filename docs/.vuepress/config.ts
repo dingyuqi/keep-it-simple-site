@@ -1,9 +1,6 @@
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { plumeTheme } from 'vuepress-theme-plume'
-import { inject } from '@vercel/analytics';
- 
-inject();
 
 export default defineUserConfig({
   base: '/',
