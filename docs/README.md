@@ -8,7 +8,7 @@ config:
     hero:
       name: 丁语琪
       tagline: Keep It Simple
-      text: 一个程序员的工作笔记
+      text: 如无必要, 勿增实体
       actions:
         -
           theme: brand
@@ -25,16 +25,16 @@ config:
   - type: features
     features:
       -
-        title: 论文解读
-        icon: 💻
+        title: 论文笔记
+        icon: 📖
         details: DGFD, GAR
       -
         title: 数据库
-        icon: 📖
+        icon: 📈
         details: 关系型, NoSQL, 中间件
       -
         title: 数据挖掘
-        icon: 🚀
+        icon: 📍
         details: 基础概念和算法
   - type: blog
       
