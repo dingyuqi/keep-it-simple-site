@@ -6,14 +6,16 @@ createTime: 2024/09/20 14:35:15
 permalink: /article/g06hjv2n/
 draft: true
 ---
-
+::: center
+<img src="/avatar/dyq.png" alt="头像" style="border-radius: 5%;width: 12%; height: 12%;">
+:::
 
 ## 东南大学
 2017-2021 年就读于 [东南大学](https://www.seu.edu.cn/), 计算机科学与工程学院- ==计算机科学与技术== 专业. 
 
 :::: card-grid
 
-::: card title="杨绍富"
+::: card title="杨绍富" icon="/icon/southeast.png"
 
 [实验室导师](https://sfyangcs.github.io/)
 :::
