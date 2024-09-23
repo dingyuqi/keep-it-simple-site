@@ -2,9 +2,11 @@
 pageLayout: home
 externalLinkIcon: false
 config:
-  - type: hero
-    full: true
-    background: tint-plate
+  - type: banner
+    banner: "/back_ground/bg.png"
+    bannerMask:
+      light: 0.1
+      dark: 0.3
     hero:
       name: 丁语琪
       tagline: Keep It Simple
