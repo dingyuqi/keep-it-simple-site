@@ -2,16 +2,17 @@ import { defineNavbarConfig } from 'vuepress-theme-plume'
 
 export const zhNavbar = defineNavbarConfig([
   { text: '首页', link: '/' },
-  { text: '博客', link: '/blog/', icon:'material-symbols:book-2-outline-rounded' },
-  { text: '标签', link: '/blog/tags/', icon: 'material-symbols:label'},
-  { text: '归档', link: '/blog/archives/' },
+  { text: '博客', link: '/blog/', icon: 'material-symbols:book-2-outline-rounded' },
+  { text: '标签', link: '/blog/tags/', icon: 'material-symbols:label' },
+  { text: '归档', link: '/blog/archives/', icon: 'material-symbols:format-list-numbered' },
   {
     text: '笔记',
     items: [
-      { text: '设计模式', link: '/designModel/', icon:'material-symbols:code-blocks'},
-      { text: '数据挖掘', link: '/dataMining/', icon:'material-symbols:database-outline'},
-      { text: '论文笔记', link: '/paperNote/', icon:'material-symbols:note'},
-    ]
+      { text: '设计模式', link: '/designModel/', icon: 'material-symbols:code-blocks' },
+      { text: '数据挖掘', link: '/dataMining/', icon: 'material-symbols:database-outline' },
+      { text: '论文笔记', link: '/paperNote/', icon: 'material-symbols:note' },
+    ],
+    icon: 'ep:memo'
   },
 ])
 
