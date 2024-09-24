@@ -14,17 +14,9 @@ draft: true
 2017-2021 年就读于 [东南大学](https://www.seu.edu.cn/), 计算机科学与工程学院- ==计算机科学与技术== 专业. 
 
 :::: card-grid
+<LinkCard title="杨绍富" href="https://sfyangcs.github.io/"  icon="/avatar/ysf.jpg" description="实验室导师"/>
 
-::: card title="杨绍富" icon="/icon/southeast.png"
-
-[实验室导师](https://sfyangcs.github.io/)
-:::
-
-::: card title="分布式无人车队列仿射变换" icon="/icon/southeast.png"
-
-[本科阶段毕业论文](/pdf/thesis.pdf)
-:::
-
+<LinkCard title="分布式无人车队列仿射变换" href="https://dingyuqi.com/pdf/thesis.pdf"  icon="/icon/southeast.png" description="本科阶段毕业论文"/>
 ::::
 
 
@@ -98,14 +90,24 @@ draft: true
 
 
 ## 证书
-::: card title="系统分析师" icon="/icon/ruankao.png"
-计算机技术与软件专业技术资格
+<LinkCard title="系统分析师" href="https://dingyuqi.com/pdf/certificate.pdf"  icon="/icon/ruankao.png">
 
-[查看证书](/pdf/certificate.pdf)
-:::
+<Badge>高级</Badge> 计算机技术与软件专业技术资格
+
+**2024年**
+
+</LinkCard>
 
 ## 简历
-::: card title="简历" icon="/icon/OIP.png"
+<LinkCard title="简历" href="https://dingyuqi.com/pdf/resumeV3.1.pdf" icon="/icon/OIP.png">
 
-[查看简历](/pdf/resumeV3.1.pdf)
-:::
+<div style="display: flex; gap: 8px;">
+    <Badge>后端开发</Badge>
+    <Badge>微服务架构</Badge>
+    <Badge>分布式</Badge>
+    <Badge>NoSQL</Badge>
+    <Badge>MySQL</Badge>
+</div>
+<img src="https://skillicons.dev/icons?i=go,py,redis,mysql,postgres,linux,git,kubernetes,docker" />
+
+</LinkCard>
