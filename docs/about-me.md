@@ -13,12 +13,11 @@ draft: true
 ## 东南大学
 2017-2021 年就读于 [东南大学](https://www.seu.edu.cn/), 计算机科学与工程学院- ==计算机科学与技术== 专业. 
 
-:::: card-grid
+<CardGrid>
 <LinkCard title="杨绍富" href="https://sfyangcs.github.io/"  icon="/avatar/ysf.jpg" description="实验室导师"/>
 
 <LinkCard title="分布式无人车队列仿射变换" href="https://dingyuqi.com/pdf/thesis.pdf"  icon="/icon/southeast.png" description="本科阶段毕业论文"/>
-::::
-
+</CardGrid>
 
 ## 深圳计算科学研究院
 2021年07月-至今

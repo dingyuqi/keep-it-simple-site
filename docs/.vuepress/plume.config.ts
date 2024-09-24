@@ -24,7 +24,7 @@ export default defineThemeConfig({
         name: 'Keep It Simple',
         description: '用最简单的语言解释计算机',
         // circle: true,
-        // location: '',
+        location: 'ShenZhen, China',
         // organization: '',
       },
 

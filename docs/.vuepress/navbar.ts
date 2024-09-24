@@ -3,7 +3,7 @@ import { defineNavbarConfig } from 'vuepress-theme-plume'
 export const zhNavbar = defineNavbarConfig([
   { text: '首页', link: '/' },
   { text: '博客', link: '/blog/', icon: 'material-symbols:book-2-outline-rounded' },
-  { text: '标签', link: '/blog/tags/', icon: 'material-symbols:label' },
+  { text: '分类', link: '/blog/categories/', icon: 'material-symbols:category-outline' },
   { text: '归档', link: '/blog/archives/', icon: 'material-symbols:format-list-numbered' },
   {
     text: '笔记',
