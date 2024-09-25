@@ -29,7 +29,7 @@
   --vp-code-block-bg: #f6f8fa;                        /* 代码块背景 */
 }
 
-.dark {
+[data-theme="dark"] {
 
   /**
    * 主题色
