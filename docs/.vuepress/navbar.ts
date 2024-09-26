@@ -11,6 +11,7 @@ export const zhNavbar = defineNavbarConfig([
       { text: '设计模式', link: '/designModel/', icon: 'material-symbols:code-blocks' },
       { text: '数据挖掘', link: '/dataMining/', icon: 'material-symbols:database-outline' },
       { text: '论文笔记', link: '/paperNote/', icon: 'material-symbols:note' },
+      { text: '面试题目', link: '/interview/', icon: 'clarity:employee-line' },
     ],
     icon: 'ep:memo'
   },
