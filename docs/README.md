@@ -29,15 +29,17 @@ config:
       -
         title: 论文笔记
         icon: 📖
-        details: DGFD, GAR
+        details: 樊文飞院士的论文解读(DGFD, GAR)
+        link: /paperNote/
       -
         title: 数据库
         icon: 📈
-        details: 关系型, NoSQL, 中间件
+        details: 关系型, NoSQL, 中间件的讲解和使用
+        link: http://localhost:8080/blog/categories/?id=4b16fb
       -
         title: 数据挖掘
         icon: 📍
-        details: 基础概念和算法
+        details: 从数据处理到关联规则发现
+        link: /dataMining/
   - type: blog
-      
 ---

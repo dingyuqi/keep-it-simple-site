@@ -85,5 +85,15 @@ export default defineUserConfig({
         inputPosition: 'top',
       },
     },
+    blog: {
+      // 配置 封面图 布局位置
+      // postCover: 'left', // 'left' | 'right' | 'odd-left' | 'odd-right' | 'top'
+      postCover: {
+        layout: 'left',
+        ratio: '4:3',
+        width: 300,
+        compact: true
+      }
+    }
   }),
 })
