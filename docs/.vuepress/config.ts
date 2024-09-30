@@ -39,14 +39,23 @@ export default defineUserConfig({
        */
       markdownEnhance: {
         demo: true,
-      //   include: true,
-      //   chart: true,
-      //   echarts: true,
+        //   include: true,
+        //   chart: true,
+        //   echarts: true,
         mermaid: true,
-        figure: true,
-      //   flowchart: true,
+        //   flowchart: true,
       },
 
+      markdownImage: {
+        // 启用 figure
+        figure: true,
+        // 启用图片懒加载
+        // lazyload: true,
+        // 启用图片标记
+        mark: true,
+        // 启用图片大小
+        size: true,
+      },
       /**
        *  markdown power
        * @see https://theme-plume.vuejs.press/config/plugin/markdown-power/
@@ -79,7 +88,7 @@ export default defineUserConfig({
         repo: 'dingyuqi/alex-blog-issues',
         repoId: 'R_kgDOMRQTXA',
         categoryId: 'DIC_kwDOMRQTXM4CioGB',
-        category: 'Announcements', 
+        category: 'Announcements',
         mapping: 'pathname',
         reactionsEnabled: true,
         inputPosition: 'top',
