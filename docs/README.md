@@ -24,6 +24,12 @@ config:
           theme: alt
           text: Github →
           link: https://github.com/dingyuqi
+  - type: hero
+    hero: 
+      name: 快速导航
+      tagline: 想看系列文章吗？
+      text: 点击下方你感兴趣的笔记内容吧！
+
   - type: features
     features:
       -
@@ -41,5 +47,10 @@ config:
         icon: 📍
         details: 从数据处理到关联规则发现
         link: /dataMining/
+      -
+        title: 设计模式
+        icon: 📦
+        details: 面向对象编程的代码设计经验总结
+        link: /designModel/
   - type: blog
 ---
