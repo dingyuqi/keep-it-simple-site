@@ -28,10 +28,10 @@ export default defineUserConfig({
        * Shiki 代码高亮
        * @see https://theme-plume.vuejs.press/config/plugins/code-highlight/
        */
-      // shiki: {
-      //   languages: ['shell', 'bash', 'typescript', 'javascript'],
+      shiki: {
+        languages: ["sql","shell","mermaid","go","html","php","python","bash","c++","js","ts","css"],
       //   twoslash: true,
-      // },
+      },
 
       /**
        * markdown enhance
