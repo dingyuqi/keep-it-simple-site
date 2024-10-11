@@ -29,8 +29,8 @@ export default defineUserConfig({
        * @see https://theme-plume.vuejs.press/config/plugins/code-highlight/
        */
       shiki: {
-        languages: ["sql","shell","mermaid","go","html","php","python","bash","c++","js","ts","css"],
-      //   twoslash: true,
+        languages: ["sql", "shell", "mermaid", "go", "html", "php", "python", "bash", "c++", "js", "ts", "css"],
+        //   twoslash: true,
       },
 
       /**
@@ -102,6 +102,9 @@ export default defineUserConfig({
         ratio: '4:3',
         width: 300,
         compact: true
+      },
+      pagination: {
+        perPage: 10
       }
     }
   }),

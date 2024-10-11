@@ -8,7 +8,7 @@ import { enNotes, zhNotes } from './notes'
 export default defineThemeConfig({
   logo: '/icon/icon.ico',
   // your git repo url
-  docsRepo: '',
+  docsRepo: 'https://github.com/dingyuqi/blog-with-plume-theme',
   docsDir: 'docs',
 
   appearance: true,
