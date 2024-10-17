@@ -29,7 +29,7 @@ export default defineUserConfig({
        * @see https://theme-plume.vuejs.press/config/plugins/code-highlight/
        */
       shiki: {
-        languages: ["sql", "shell", "mermaid", "go", "html", "php", "python", "bash", "c++", "js", "ts", "css"],
+        languages: ["sql", "shell", "mermaid", "go", "html", "php", "python", "bash", "c++", "js", "ts", "css", "yaml"],
         //   twoslash: true,
       },
 
@@ -98,7 +98,7 @@ export default defineUserConfig({
       // 配置 封面图 布局位置
       // postCover: 'left', // 'left' | 'right' | 'odd-left' | 'odd-right' | 'top'
       postCover: {
-        layout: 'odd-left',
+        layout: 'left',
         ratio: '4:3',
         width: 300,
         compact: true
