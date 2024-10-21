@@ -41,7 +41,7 @@ config:
         title: 数据库
         icon: 📈
         details: 关系型, NoSQL, 中间件的讲解和使用
-        link: http://localhost:8080/blog/categories/?id=4b16fb
+        link: /blog/categories/?id=4b16fb
       -
         title: 数据挖掘
         icon: 📍
