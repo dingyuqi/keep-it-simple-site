@@ -29,7 +29,7 @@ export default defineUserConfig({
        * @see https://theme-plume.vuejs.press/config/plugins/code-highlight/
        */
       shiki: {
-        languages: ["sql", "shell", "mermaid", "go", "html", "php", "python", "bash", "c++", "js", "ts", "css", "yaml"],
+        languages: ["sql", "shell", "mermaid", "go", "html", "php", "python", "bash", "c++", "js", "ts", "css", "yaml", "md"],
         //   twoslash: true,
       },
 
@@ -93,6 +93,21 @@ export default defineUserConfig({
         reactionsEnabled: true,
         inputPosition: 'top',
       },
+
+      /**
+       * local mini search
+       */
+      search: false,
+
+      /**
+       * Algolia DocSearch
+       */
+      docsearch: {
+        appId: 'KFGYVIHG31',
+        apiKey: 'c78d52bca994ea6b299b4bffb41c98a2',
+        indexName: 'dingyuqi',
+      }
+
     },
     blog: {
       // 配置 封面图 布局位置
