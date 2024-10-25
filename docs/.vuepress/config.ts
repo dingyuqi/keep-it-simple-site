@@ -60,7 +60,7 @@ export default defineUserConfig({
        *  markdown power
        * @see https://theme-plume.vuejs.press/config/plugin/markdown-power/
        */
-      // markdownPower: {
+      markdownPower: {
       //   pdf: true,
       //   caniuse: true,
       //   plot: true,
@@ -71,12 +71,12 @@ export default defineUserConfig({
       //   replit: true,
       //   codeSandbox: true,
       //   jsfiddle: true,
-      //   repl: {
-      //     go: true,
+        repl: {
+          go: true,
       //     rust: true,
       //     kotlin: true,
-      //   },
-      // },
+        },
+      },
 
       /**
        * comments
