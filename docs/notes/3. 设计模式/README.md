@@ -18,7 +18,8 @@ permalink: /designModel/
 对于下棋这件事情, 我们分为显示棋盘, 下棋和检查胜利几个步骤. 通过不断循环几个函数来达成下棋的功能. 
 
 可以参考下面的伪代码:
-
+::: code-tabs
+@tab play_chess.py
 ``` python
 # 初始化棋盘
 def initCheckerboard()
@@ -43,10 +44,12 @@ if __name__ == "__main__":
             break
         curPlayer = switchPlayer(curPlayer)
 ```
+:::
 
 ### 面向对象(OOP)
 在下棋这个过程中, 我们发现可以提取 **棋盘** 和 **棋手** 两个对象. 而显示, 判断是否胜利, 判断棋盘是否已满, 移动棋子等属于棋盘的动作. 下棋是属于棋手的动作. 于是乎可以得到下面的伪代码:
-
+::: code-tabs
+@tab play_chess.py
 ```python
 # 棋盘类
 class CheckerBoard:
@@ -81,6 +84,7 @@ if __name__ == "__main__":
         
         curPlayer = switchPlayer(curPlayer)
 ```
+:::
 
 ::: note 面向对象的优势
 1. 更加清晰: 可以在对象中分别管理其状态和行为. 面向过程编程通常会混淆这两者.
