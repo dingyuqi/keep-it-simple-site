@@ -5,10 +5,10 @@ export const zhNavbar = defineNavbarConfig([
   { text: '博客', link: '/blog/', icon: 'fxemoji:pages' },
   {
     text: '系列文章',
-    items: [
-      { text: '设计模式', link: '/designModel/', icon: 'material-symbols:code-blocks' },
+    items: [      
       { text: '数据挖掘', link: '/dataMining/', icon: 'material-symbols:database-outline' },
       { text: '论文笔记', link: '/paperNote/', icon: 'material-symbols:note' },
+      { text: '面向对象设计原则', link: '/designModel/', icon: 'material-symbols:code-blocks' },
       { text: '面试题目', link: '/interview/', icon: 'clarity:employee-line' },
     ],
     icon: 'fxemoji:books'

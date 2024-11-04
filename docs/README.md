@@ -48,7 +48,7 @@ config:
         details: 从数据处理到关联规则发现
         link: /dataMining/
       -
-        title: 设计模式
+        title: 设计原则
         icon: 📦
         details: 面向对象编程的代码设计经验总结
         link: /designModel/
