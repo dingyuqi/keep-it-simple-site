@@ -20,7 +20,7 @@ export const zhNotes = defineNotesConfig({
     },
     {
       // 声明笔记的目录，相对于 `notes.dir`，这里表示 `notes/typescript` 目录
-      dir: '3. 设计模式',
+      dir: '3. 设计原则',
       // 声明笔记的链接前缀，与 `notes.link` 拼接，这里表示 `/typescript/`
       // 笔记内的所有文章会以 `/typescript/` 作为访问链接前缀。
       link: '/designModel/',
