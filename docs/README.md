@@ -3,7 +3,7 @@ pageLayout: home
 externalLinkIcon: false
 config:
   - type: banner
-    banner: "/back_ground/bg.png"
+    banner: "/back-ground/wave.png"
     bannerMask:
       light: 0.1
       dark: 0.3
