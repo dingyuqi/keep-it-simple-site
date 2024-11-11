@@ -10,7 +10,6 @@
     "node": "^18.20.0 || >=20.0.0"
   },
   "scripts": {
-    "build:package": "pnpm -r --stream build",
     "docs:dev": "vuepress dev docs",
     "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
     "docs:build": "vuepress build docs --clean-cache --clean-temp",

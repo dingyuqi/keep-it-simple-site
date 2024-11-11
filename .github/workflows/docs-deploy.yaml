@@ -31,21 +31,9 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=8192
         run: pnpm docs:build
 
-      # 新建分支并存储构建结果
-      - name: Commit build to new branch
-        run: |
-          # 配置 git 用户信息
-          git config user.name "dingyqi"
-          git config user.email "dingyq2023@gmail.com"
-          
-          # 创建或切换到 build 结果存储分支
-          git checkout -B build
-          
-          # 将构建结果添加到分支
-          git add docs/.vuepress/dist
-          
-          # 提交更改
-          git commit -m "docs: build output $(date +'%Y-%m-%d %H:%M:%S')"
-          
-          # 推送新分支到远程仓库
-          git push -u origin build --force
+      - name: Deploy docs
+          uses: JamesIves/github-pages-deploy-action@v4
+          with:
+            branch: docs-build
+            folder: docs/.vuepress/dist
+            single-commit: true
