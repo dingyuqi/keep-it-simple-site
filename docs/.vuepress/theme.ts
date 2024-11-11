@@ -10,7 +10,7 @@ export const theme: Theme = plumeTheme({
         mode: 'block',
         info: [
             {
-                username: 'dingyuuqi', // github username
+                username: 'dingyuqi', // github username
             }
         ]
     },
