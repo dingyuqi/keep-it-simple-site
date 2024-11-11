@@ -18,6 +18,7 @@ export const theme: Theme = plumeTheme({
     },
     changelog: {
         maxCount: 10,
+        repoUrl: 'https://github.com/dingyuqi/blog-with-plume-theme',
     },
 
     plugins: {
@@ -120,7 +121,7 @@ export const theme: Theme = plumeTheme({
             compact: true
         },
         pagination: {
-            perPage: 10
+            perPage: 10,
         }
     }
 })
