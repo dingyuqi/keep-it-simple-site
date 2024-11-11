@@ -19,6 +19,9 @@ export const theme: Theme = plumeTheme({
     changelog: {
         maxCount: 10,
         repoUrl: 'https://github.com/dingyuqi/blog-with-plume-theme',
+        commitUrlPattern: ':repo/commit/:hash',
+        issueUrlPattern: ':repo/issues/:issue',
+        tagUrlPattern: ':repo/releases/tag/:tag'
     },
 
     plugins: {
