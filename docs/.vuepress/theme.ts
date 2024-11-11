@@ -89,11 +89,11 @@ export const theme: Theme = plumeTheme({
         comment: {
             provider: 'Giscus', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
             comment: true,
-            repo: 'dingyuqi/alex-blog-issues',
-            repoId: 'R_kgDOMRQTXA',
-            categoryId: 'DIC_kwDOMRQTXM4CioGB',
+            repo: 'dingyuqi/blog-with-plume-theme',
+            repoId: 'R_kgDOM0ffQg',
+            categoryId: 'DIC_kwDOM0ffQs4CkKcH',
             category: 'Announcements',
-            mapping: 'pathname',
+            mapping: 'title',
             reactionsEnabled: true,
             inputPosition: 'top',
         },
