@@ -1,0 +1,54 @@
+name: Deploy Docs
+
+on:
+  push:                # 触发条件改为每次push
+    branches:
+      - main           # 只在推送到 main 分支时触发（可根据需求更改）
+  workflow_dispatch:   # 保留手动触发的功能
+
+jobs:
+  deploy-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install deps
+        run: pnpm install --frozen-lockfile
+
+      - name: Build Packages
+        run: pnpm build:package
+
+      - name: Docs build
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: pnpm docs:build
+
+      # 新建分支并存储构建结果
+      - name: Commit build to new branch
+        run: |
+          # 配置 git 用户信息
+          git config user.name "dingyqi"
+          git config user.email "dingyq2023@gmail.com"
+          
+          # 创建或切换到 build 结果存储分支
+          git checkout -B build
+          
+          # 将构建结果添加到分支
+          git add docs/.vuepress/dist
+          
+          # 提交更改
+          git commit -m "docs: build output $(date +'%Y-%m-%d %H:%M:%S')"
+          
+          # 推送新分支到远程仓库
+          git push -u origin build --force
