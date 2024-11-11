@@ -11,6 +11,8 @@ export const theme: Theme = plumeTheme({
         info: [
             {
                 username: 'dingyuqi', // github username
+                url: 'https://github.com/dingyuqi/blog-with-plume-theme',
+                avatar: 'https://github.com/dingyuqi.png',
             }
         ]
     },
