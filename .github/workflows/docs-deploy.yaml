@@ -32,8 +32,8 @@ jobs:
         run: pnpm docs:build
 
       - name: Deploy docs
-          uses: JamesIves/github-pages-deploy-action@v4
-          with:
-            branch: docs-build
-            folder: docs/.vuepress/dist
-            single-commit: true
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: docs-build
+          folder: docs/.vuepress/dist
+          single-commit: true
