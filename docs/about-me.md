@@ -17,7 +17,7 @@ externalLinkIcon: false
 
 <CardGrid>
 <LinkCard title="杨绍富" href="https://sfyangcs.github.io/"  icon="/avatar/ysf.jpg" description="实验室导师"/>
-<LinkCard title="分布式无人车队列仿射变换" href="https://dingyuqi.com/pdf/thesis.pdf"  icon="/icon/southeast.png" description="本科阶段毕业论文"/>
+<LinkCard title="分布式无人车队列仿射变换" href="https://dingyuqi.com/pdf/thesis.pdf"  icon="/logo/SEU.png" description="本科阶段毕业论文"/>
 </CardGrid>
 
 ## 深圳计算科学研究院
