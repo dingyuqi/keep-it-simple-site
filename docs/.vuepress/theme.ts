@@ -8,13 +8,6 @@ export const theme: Theme = plumeTheme({
     docsDir: 'docs',
     contributors: {
         mode: 'block',
-        info: [
-            {
-                username: 'dingyuqi', // github username
-                url: 'https://github.com/dingyuqi/blog-with-plume-theme',
-                avatar: 'https://github.com/dingyuqi.png',
-            }
-        ]
     },
     changelog: {
         maxCount: 10,

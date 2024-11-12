@@ -11,6 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Print Git Log
+        run: git log --oneline -n 10
       - name: Install pnpm
         uses: pnpm/action-setup@v4
       - name: Setup Node.js
