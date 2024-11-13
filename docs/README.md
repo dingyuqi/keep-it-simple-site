@@ -24,11 +24,7 @@ config:
           theme: alt
           text: Github →
           link: https://github.com/dingyuqi
-  - type: hero
-    hero: 
-      name: 快速导航
-      tagline: 想看系列文章吗？
-      text: 点击下方你感兴趣的笔记内容吧！
+  - type: custom
 
   - type: features
     features:
@@ -54,3 +50,6 @@ config:
         link: /designModel/
   - type: blog
 ---
+::: center
+# 快速导航
+:::
