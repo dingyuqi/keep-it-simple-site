@@ -18,7 +18,7 @@ config:
           link: /blog/
         -
           theme: brand
-          text: 关于我
+          text: 😶关于我
           link: /article/g06hjv2n/
         -
           theme: alt
