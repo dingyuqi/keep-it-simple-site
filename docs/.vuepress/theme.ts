@@ -9,9 +9,7 @@ export const theme: Theme = plumeTheme({
     contributors: {
         mode: 'block',
     },
-    changelog: {
-        maxCount: 10,
-    },
+    changelog: true,
 
     plugins: {
         /**
