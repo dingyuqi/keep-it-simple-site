@@ -53,10 +53,8 @@ externalLinkIcon: false
 </div>
 </LinkCard>
 
-### Tech Stack
-<img src="https://skillicons.dev/icons?i=go,py,redis,mysql,postgres,flask,kafka"> 
+## Tech Stack
+<picture><img src="https://go-skill-icons.vercel.app/api/icons?i=go,py,redis,mysql,oracle,postgres,kafka,grpc,flask&perline=5"></picture>
 
-:[logos:gin 48px]: :[logos:grpc 48px]: :[logos:etcd 48px]:
-
-### Tools I Use
-<picture><img src="https://skillicons.dev/icons?i=vscode,pycharm,git,kubernetes,docker,vercel,jenkins"></picture>
+## Tools I Use
+<picture><img src="https://go-skill-icons.vercel.app/api/icons?i=vscode,goland,pycharm,dbeaver,git,github,kubernetes,docker,vercel,jenkins,grafana&perline=5"></picture>
