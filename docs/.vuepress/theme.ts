@@ -31,6 +31,7 @@ export const theme: Theme = plumeTheme({
             //   chart: true,
             //   echarts: true,
             mermaid: true,
+            markmap: true,
             //   flowchart: true,
         },
 
