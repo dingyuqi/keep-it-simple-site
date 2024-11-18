@@ -59,3 +59,8 @@
   --vp-sidebar-bg-color: #161618;                     /* 侧边栏背景 */
   --vp-code-block-bg: #202127;                        /* 代码块背景 */
 }
+
+.vp-doc table {
+  display: table;
+ margin: 20px auto;
+}
