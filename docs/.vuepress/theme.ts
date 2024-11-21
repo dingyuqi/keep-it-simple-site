@@ -1,5 +1,6 @@
 import type { Theme } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
+
 export const theme: Theme = plumeTheme({
     // 添加您的部署域名
     hostname: 'https://dingyuqi.com',
@@ -116,3 +117,11 @@ export const theme: Theme = plumeTheme({
         }
     }
 })
+
+export default {
+    plugins: {
+        googleAnalyticsPlugin: {
+            id: 'G-DWDHVL9R0F',
+        },
+    }
+}
