@@ -17,6 +17,6 @@ config:
           link: /blog/
         -
           theme: alt
-          text: Github →
+          text: Github ->
           link: https://github.com/dingyuqi
 ---

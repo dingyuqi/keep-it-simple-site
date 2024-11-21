@@ -22,7 +22,7 @@ config:
           link: /article/g06hjv2n/
         -
           theme: alt
-          text: Github →
+          text: Github ->
           link: https://github.com/dingyuqi
   - type: custom
 
