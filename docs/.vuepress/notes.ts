@@ -16,16 +16,19 @@ export const zhNotes = defineNotesConfig({
     {
       dir: '2. 论文笔记',
       link: '/paperNote/',
-      sidebar: 'auto'
+      sidebar: [
+        {
+          dir: 'DGFD',
+          text: 'DGFD',
+          icon: 'ph:graph',
+          collapsed: false,
+          items: 'auto',
+        }
+      ],
     },
     {
-      // 声明笔记的目录，相对于 `notes.dir`，这里表示 `notes/typescript` 目录
       dir: '3. 设计原则',
-      // 声明笔记的链接前缀，与 `notes.link` 拼接，这里表示 `/typescript/`
-      // 笔记内的所有文章会以 `/typescript/` 作为访问链接前缀。
       link: '/designModel/',
-      // 配置 笔记侧边导航栏，用于导航向笔记内的所有文档
-      // 声明为 `auto` 的，将根据目录结构自动生成侧边栏导航
       sidebar: 'auto'
     },
     {
@@ -33,8 +36,6 @@ export const zhNotes = defineNotesConfig({
       link: '/interview/',
       sidebar: 'auto'
     }
-    
-    
   ]
 })
 
