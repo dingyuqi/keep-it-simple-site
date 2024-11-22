@@ -11,12 +11,29 @@ export const zhNotes = defineNotesConfig({
     {
       dir: '1. 数据挖掘',
       link: '/dataMining/',
-      sidebar: 'auto'
+      sidebar: [
+        '',
+        {
+          dir: '1. 数据',
+          text: '数据',
+          icon: 'mdi:database-outline',
+          collapsed: false,
+          items: 'auto',
+        },
+        {
+          dir: '2. 关联分析',
+          text: '关联分析',
+          icon: 'carbon:chart-relationship',
+          collapsed: false,
+          items: 'auto',
+        }
+      ]
     },
     {
       dir: '2. 论文笔记',
       link: '/paperNote/',
       sidebar: [
+        '',
         {
           dir: 'DGFD',
           text: 'DGFD',
