@@ -117,11 +117,3 @@ export const theme: Theme = plumeTheme({
         }
     }
 })
-
-export default {
-    plugins: {
-        googleAnalyticsPlugin: {
-            id: 'G-DWDHVL9R0F',
-        },
-    }
-}
