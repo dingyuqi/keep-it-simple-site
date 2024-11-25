@@ -115,5 +115,6 @@ export const theme: Theme = plumeTheme({
         pagination: {
             perPage: 10,
         }
-    }
+    },
+    copyright: 'CC-BY-NC-ND-4.0'
 })
