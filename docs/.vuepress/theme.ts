@@ -11,7 +11,21 @@ export const theme: Theme = plumeTheme({
         mode: 'block',
     },
     changelog: true,
-
+    copyright: 'CC-BY-NC-ND-4.0',
+    footer: {message:'Keep It Simple', copyright:'Copyright © 2021-present dingyuqi. All rights reserved.'},
+    blog: {
+        // 配置 封面图 布局位置
+        // postCover: 'left', // 'left' | 'right' | 'odd-left' | 'odd-right' | 'top'
+        postCover: {
+            layout: 'left',
+            ratio: '4:3',
+            width: 300,
+            compact: true
+        },
+        pagination: {
+            perPage: 10,
+        }
+    },
     plugins: {
         /**
          * Shiki 代码高亮
@@ -101,20 +115,5 @@ export const theme: Theme = plumeTheme({
             indexName: 'dingyuqi',
         },
         git: true,
-
     },
-    blog: {
-        // 配置 封面图 布局位置
-        // postCover: 'left', // 'left' | 'right' | 'odd-left' | 'odd-right' | 'top'
-        postCover: {
-            layout: 'left',
-            ratio: '4:3',
-            width: 300,
-            compact: true
-        },
-        pagination: {
-            perPage: 10,
-        }
-    },
-    copyright: 'CC-BY-NC-ND-4.0'
 })
