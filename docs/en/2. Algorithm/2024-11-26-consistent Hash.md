@@ -1,5 +1,5 @@
 ---
-title: What is a consistent hash algorithm?
+title: What is a Consistent Hash Algorithm?
 cover: /illustration/hash-ring-data-server-map.png
 tags:
   - Big Data
@@ -7,11 +7,10 @@ tags:
 createTime: 2024/11/26 10:18:51
 permalink: /en/article/s1n21jo1/
 ---
-"Consistent hash" seems to be a confusing name, because the result of the hash function should be the same no matter where it is calculated, so why is there a consistency problem? 
+"Consistent Hash" seems to be a confusing name, because the result of the hash function should be the same no matter where it is calculated, so why is there a consistency problem? 
 <!-- more -->
 
-In fact, we proposed the concept of consistent hash to solve the problem in distributed storage. In distributed storage, different machines will store data of different objects, and we use hash functions to establish a mapping relationship between data and servers. So why is there "inconsistency"?
-
+In fact, we proposed the concept of Consistent Hash to solve the problem in distributed storage. In distributed storage, different machines will store data of different objects, and we use hash functions to establish a mapping relationship between data and servers. So why is there "inconsistency"?
 
 ## What does hash inconsistency mean?
 Let's consider a distributed storage scenario:
@@ -41,10 +40,10 @@ If we add a machine at this time, After $n = 4$, the mapping can be recalculated
 
 Obviously, except for $D_1 and D_2$, which have not changed the machine node, all other data have changed the storage machine. This means that when a machine node is added to the storage cluster, a large amount of data migration will occur, which undoubtedly adds a lot of pressure to the network and disk, and may even cause the database to crash in severe cases.
 
-So the consistency of Hash does not mean that the results of repeated calculations of the Hash function are inconsistent, but that this calculation leads to data migration. So is it possible for us to reduce this data migration? Yes, ==Consistency Hash algorithm can ensure that when machine nodes are increased or decreased, data migration between nodes is limited to two nodes, Without causing global network problems.==
+So the consistency of Hash does not mean that the results of repeated calculations of the Hash function are inconsistent, but that this calculation leads to data migration. So is it possible for us to reduce this data migration? Yes, ==Consistency Hash Algorithm can ensure that when machine nodes are increased or decreased, data migration between nodes is limited to two nodes, Without causing global network problems.==
 
 ## Consistent Hash usage scenarios
-The consistent hash algorithm is a very important algorithm in distributed systems, mainly used in:
+The Consistent Hash algorithm is a very important algorithm in distributed systems, mainly used in:
 - Load balancing
 - Cache data partitioning
 - Distributed relational database node mapping
@@ -76,7 +75,7 @@ Each data object selects the machine closest to it in a clockwise direction for 
 
 :::
 
-The above has completed the calculation process of the entire consistent Hash algorithm. Next, let's take a look at the two scenarios mentioned at the beginning of the article: what changes will occur in the mapping between data and machines in adding machine nodes and deleting machine nodes.
+The above has completed the calculation process of the entire Consistent Hash Algorithm. Next, let's take a look at the two scenarios mentioned at the beginning of the article: what changes will occur in the mapping between data and machines in adding machine nodes and deleting machine nodes.
 
 ### Adding machine nodes
 Now add a machine $c_4$, and get the integer $t_4$ after taking the Hash value modulo, and add it to the Hash ring.
@@ -107,6 +106,6 @@ You can understand that we have added another layer of mapping from virtual mach
 :::
 
 ## Summary
-The consistent Hash algorithm solves the problem that when machines are added or reduced in a distributed environment, simple modulus operations cannot obtain a high hit rate.
+The Consistent Hash Algorithm solves the problem that when machines are added or reduced in a distributed environment, simple modulus operations cannot obtain a high hit rate.
 
-Through the use of virtual nodes, the consistent Hash algorithm can evenly share the load of the machine, making this algorithm more realistic.
+Through the use of virtual nodes, the Consistent Hash Algorithm can evenly share the load of the machine, making this algorithm more realistic.
