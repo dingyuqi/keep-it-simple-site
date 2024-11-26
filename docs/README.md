@@ -10,7 +10,7 @@ config:
     hero:
       name: 丁语琪
       tagline: Keep It Simple
-      text: 如无必要, 勿增实体
+      text: 如无必要, 勿增实体.
       actions:
         -
           theme: brand
@@ -18,7 +18,7 @@ config:
           link: /blog/
         -
           theme: brand
-          text: 😶关于我
+          text: 😶 关于我
           link: /article/g06hjv2n/
         -
           theme: alt
