@@ -16,7 +16,7 @@ permalink: /en/article/po11scmd/
 From 2017 to 2021, I studied at [Southeast University](https://www.seu.edu.cn/), majoring in Computer Science and Technology.
 
 <CardGrid>
-<LinkCard title="sf yang" href="https://sfyangcs.github.io/"  icon="/avatar/ysf.jpg" description="Advisor"/>
+<LinkCard title="Shaofu Yang" href="https://sfyangcs.github.io/"  icon="/avatar/ysf.jpg" description="Advisor"/>
 <LinkCard title="Affine transformation of distributed unmanned vehicle platoon" href="https://dingyuqi.com/pdf/thesis.pdf"  icon=skill-icons:ros-dark description="Undergraduate thesis"/>
 </CardGrid>
 
