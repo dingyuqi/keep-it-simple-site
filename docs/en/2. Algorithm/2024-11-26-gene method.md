@@ -1,10 +1,10 @@
 ---
 title: "Gene method: Solve the query of non-sharding key in the case of sharding"
 tags:
-- Distributed
-- Big data
+  - Distributed
+  - Big data
 createTime: 2024/11/26 10:27:48
-permalink: /article/ys95iwqf/
+permalink: /en/article/xa8pmz6z/
 ---
 In the scenario of big data, we all know that when the number of single tables reaches 20 million or 2 GB, it is necessary to shard the database and table. However, after all data is sharded according to the specified sharding key, a new problem will arise: **How ​​to query non-sharding key?** Of course, we can quickly think of a violent method, which is to use multiple threads to search all partitions at the same time, and then merge and summarize the results of each thread. But obviously this solution is very inefficient.
 
