@@ -1,3 +1,4 @@
+import path from 'node:path'
 import type { Theme } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
@@ -12,7 +13,7 @@ export const theme: Theme = plumeTheme({
     },
     changelog: true,
     copyright: 'CC-BY-NC-ND-4.0',
-    footer: {message:'Keep It Simple', copyright:'Copyright © 2021-present dingyuqi. All rights reserved.'},
+    footer: { message: 'Keep It Simple', copyright: 'Copyright © 2021-present dingyuqi. All rights reserved.' },
     blog: {
         // 配置 封面图 布局位置
         // postCover: 'left', // 'left' | 'right' | 'odd-left' | 'odd-right' | 'top'
@@ -25,6 +26,13 @@ export const theme: Theme = plumeTheme({
         pagination: {
             perPage: 10,
         }
+    },
+    bulletin: {
+        layout: 'top-right',
+        border: false,
+        title: 'Announcement: Limited English Blog Content',
+        contentFile: path.join(__dirname, '_limit_english_bulletin.md'),
+        enablePage: page => page.path === '/en/',
     },
     plugins: {
         /**

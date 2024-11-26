@@ -10,7 +10,7 @@ export default defineUserConfig({
     '/': {
       title: 'Keep It Simple',
       lang: 'zh-CN',
-      description: 'The goal is to explain computer knowledge in simple and easy-to-understand way.',
+      description: '用最简单的语言解释计算机.',
     },
     '/en/': {
       title: 'Keep It Simple',
