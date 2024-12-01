@@ -1,7 +1,9 @@
 ---
 title: Modify usernames in existing Git commits in batches
 tags:
-- Git
+  - Git
+createTime: 2024/11/28 16:33:57
+permalink: /en/article/utvqql9z/
 ---
 For a long time, commits on GitHub were all made using work accounts, which caused confusion among committers in private repositories. I found a bash script in StackOverflow that can modify usernames in batches. I change it a bit and record it here.
 
