@@ -2,6 +2,13 @@
 title: 面向对象设计的七大设计原则
 createTime: 2024/09/20 15:23:51
 permalink: /designModel/
+aside: false
+readingTime: false
+comment: false
+editLink: false
+contributors: false
+changelog: false
+copyright: false
 ---
 ## 什么是面向对象编程?
 设计模式是针对面向对象编程这种编程范式的. 那么在学习设计模式之前我们也要理解什么是 ==面向对象编程==. 面向对象编程是在问题中提取出不同的对象, 而每个对象都有自己的属性和行为. 我们解决问题的过程就是对象与对象之间通过"行为"交互来完成的.

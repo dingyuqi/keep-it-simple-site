@@ -1,10 +1,16 @@
 ---
-comments: false
 title: 关于我
 createTime: 2024/09/20 14:35:15
-permalink: /article/g06hjv2n/
+permalink: /article/about-me/
 draft: true
 externalLinkIcon: false
+aside: false
+readingTime: false
+comment: false
+editLink: false
+contributors: false
+changelog: false
+copyright: false
 ---
 ![](/back-ground/github-header-image.png)
 

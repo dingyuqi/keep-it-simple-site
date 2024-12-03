@@ -2,6 +2,13 @@
 title: 数据挖掘导论前言
 createTime: 2024/04/30 18:30:00
 permalink: /dataMining/
+aside: false
+readingTime: false
+comment: false
+editLink: false
+contributors: false
+changelog: false
+copyright: false
 ---
 由于我本人的工作就是关于大数据图算法挖掘的, 之前连载的栏目 [DGFD](/paperNote/9hfux33n/) 论文笔记也是关于这方面的, 所以打算新开一个栏目来对数据挖掘有个更加系统的记录.
 

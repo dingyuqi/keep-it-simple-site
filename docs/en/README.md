@@ -19,7 +19,7 @@ config:
         -
           theme: brand
           text: 😶 About me
-          link: /en/article/po11scmd/
+          link: /en/article/about-me/
         - 
           theme: alt
           text: Github ->

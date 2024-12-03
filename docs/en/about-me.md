@@ -1,10 +1,16 @@
 ---
-comments: false
 title: About Me
+createTime: 2024/11/25 16:55:47
+permalink: /en/article/about-me/
 draft: true
 externalLinkIcon: false
-createTime: 2024/11/25 16:55:47
-permalink: /en/article/po11scmd/
+aside: false
+readingTime: false
+comment: false
+editLink: false
+contributors: false
+changelog: false
+copyright: false
 ---
 ![](/back-ground/github-header-image.png)
 
