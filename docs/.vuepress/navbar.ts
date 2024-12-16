@@ -13,10 +13,24 @@ export const zhNavbar = defineNavbarConfig([
       { text: '面试题目', link: '/interview/', icon: 'flat-color-icons:faq' },
     ]
   },
+  {
+    text: '更多',
+    icon: 'icon-park:more-two',
+    items:[
+      { text: '网站资源', link: '/resource/', icon: 'flat-color-icons:link' },
+    ]
+  }
 ])
 
 export const enNavbar = defineNavbarConfig([
   { text: 'Home', link: '/en/', icon: 'flat-color-icons:home' },
   { text: 'Blog', link: '/en/blog/', icon: 'flat-color-icons:view-details' },
+  {
+    text: 'More',
+    icon: 'icon-park:more-two',
+    items:[
+      { text: 'Resource', link: '/en/resource/', icon: 'flat-color-icons:link' },
+    ]
+  }
 ])
 
