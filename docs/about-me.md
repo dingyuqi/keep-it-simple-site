@@ -1,7 +1,7 @@
 ---
 title: 关于我
 createTime: 2024/09/20 14:35:15
-permalink: /article/about-me/
+permalink: /about-me/
 draft: true
 externalLinkIcon: false
 aside: false
@@ -42,7 +42,7 @@ copyright: false
 :::
 
 ## 证书
-<LinkCard title="系统分析师" href="https://dingyuqi.com/pdf/certificate.pdf"  icon="/icon/ruankao.png">
+<LinkCard title="系统分析师" href="/pdf/certificate.pdf"  icon="/icon/ruankao.png">
 <div style="display: flex; gap: 8px;">
     <Badge>高级</Badge> <Badge>2024年</Badge>
 </div>
@@ -50,7 +50,7 @@ copyright: false
 </LinkCard>
 
 ## 简历
-<LinkCard title="简历" href="https://dingyuqi.com/pdf/resumeV3.1.pdf" icon="/icon/OIP.png">
+<LinkCard title="简历" icon="/icon/OIP.png">
 <div style="display: flex; gap: 8px;">
   <Badge>微服务</Badge>
   <Badge>分布式</Badge>

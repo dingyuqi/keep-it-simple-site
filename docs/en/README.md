@@ -19,7 +19,7 @@ config:
         -
           theme: brand
           text: 😶 About me
-          link: /en/article/about-me/
+          link: /en/about-me/
         - 
           theme: alt
           text: Github ->

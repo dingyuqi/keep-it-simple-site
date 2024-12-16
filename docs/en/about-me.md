@@ -1,7 +1,7 @@
 ---
 title: About Me
 createTime: 2024/11/25 16:55:47
-permalink: /en/article/about-me/
+permalink: /en/about-me/
 draft: true
 externalLinkIcon: false
 aside: false
@@ -42,7 +42,7 @@ Mainly responsible for the new function iteration and daily maintenance of the [
 :::
 
 ## Certificate
-<LinkCard title="Systems Analyst" href="https://dingyuqi.com/pdf/certificate.pdf"  icon="/icon/ruankao.png">
+<LinkCard title="Systems Analyst" href="/pdf/certificate.pdf"  icon="/icon/ruankao.png">
 <div style="display: flex; gap: 8px;">
     <Badge>Advanced</Badge> <Badge>2024</Badge>
 </div>
@@ -50,7 +50,7 @@ Computer Technology and Software Professional Technical Qualification.
 </LinkCard>
 
 ## Resume
-<LinkCard title="Resume" href="https://dingyuqi.com/pdf/resumeV3.1.pdf" icon="/icon/OIP.png">
+<LinkCard title="Resume" icon="/icon/OIP.png">
 <div style="display: flex; gap: 8px;">
   <Badge>Microservices</Badge>
   <Badge>Distributed System</Badge>
