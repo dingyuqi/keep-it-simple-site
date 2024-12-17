@@ -1,6 +1,8 @@
 ---
 title: 文本资料
 permalink: /resource/textual-material/
+createTime: 2024/12/16 14:31:30
+icon: cil:text-size
 draft: true
 externalLinkIcon: false
 aside: false
@@ -10,7 +12,6 @@ editLink: false
 contributors: false
 changelog: false
 copyright: false
-createTime: 2024/12/16 14:31:30
 ---
 我在 GitHub 上建立了一个仓库, 用于保存我使用过的书籍以及论文.
 

@@ -1,7 +1,7 @@
 import { defineNoteConfig } from 'vuepress-theme-plume'
 
 export default defineNoteConfig({
-    dir: '2. 论文笔记',
+    dir: '论文笔记',
     link: '/paperNote/',
     sidebar: [
         '',

@@ -1,6 +1,8 @@
 ---
 title: Textual Material
 permalink: /en/resource/textual-material/
+createTime: 2024/12/16 14:31:30
+icon: cil:text-size
 draft: true
 externalLinkIcon: false
 aside: false
@@ -10,7 +12,7 @@ editLink: false
 contributors: false
 changelog: false
 copyright: false
-createTime: 2024/12/16 14:31:30
+
 ---
 I maintain a repository on GitHub for all the books and papers I used.
 

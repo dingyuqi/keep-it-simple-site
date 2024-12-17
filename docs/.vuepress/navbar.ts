@@ -10,7 +10,6 @@ export const zhNavbar = defineNavbarConfig([
       { text: '数据挖掘', link: '/dataMining/', icon: 'flat-color-icons:combo-chart' },
       { text: '论文笔记', link: '/paperNote/', icon: 'flat-color-icons:library' },
       { text: '编程设计', link: '/designModel/', icon: 'flat-color-icons:command-line' },
-      { text: '面试题目', link: '/interview/', icon: 'flat-color-icons:faq' },
     ]
   },
   {
@@ -18,6 +17,7 @@ export const zhNavbar = defineNavbarConfig([
     icon: 'icon-park:more-two',
     items:[
       { text: '网站资源', link: '/resource/', icon: 'flat-color-icons:link' },
+      { text: '面试题目', link: '/interview/', icon: 'flat-color-icons:faq' },
     ]
   }
 ])

@@ -3,6 +3,8 @@ import dataMining from './notes/zh/data-mining'
 import paper from './notes/zh/paper'
 import codeDesign from './notes/zh/code-design'
 import interview from './notes/zh/interview'
+import zhResource from './notes/zh/resource'
+import enResource from './notes/en/resource'
 
 /* =================== locale: zh-CN ======================= */
 
@@ -14,7 +16,8 @@ export const zhNotes = defineNotesConfig({
     dataMining,
     paper,
     codeDesign,
-    interview
+    interview,
+    zhResource
   ]
 })
 
@@ -23,6 +26,8 @@ export const zhNotes = defineNotesConfig({
 export const enNotes = defineNotesConfig({
   dir: 'en/notes',
   link: '/en/',
-  notes: [],
+  notes: [
+    enResource
+  ],
 })
 
