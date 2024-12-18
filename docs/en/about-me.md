@@ -42,7 +42,7 @@ Mainly responsible for the new function iteration and daily maintenance of the [
 :::
 
 ## Certificate
-<LinkCard title="Systems Analyst" href="/pdf/certificate.pdf"  icon="/icon/ruankao.png">
+<LinkCard title="Systems Analyst" href="https://dingyuqi.com/pdf/certificate.pdf" target="_blank" icon="/icon/ruankao.png">
 <div style="display: flex; gap: 8px;">
     <Badge>Advanced</Badge> <Badge>2024</Badge>
 </div>

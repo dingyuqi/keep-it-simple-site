@@ -42,7 +42,7 @@ copyright: false
 :::
 
 ## 证书
-<LinkCard title="系统分析师" href="/pdf/certificate.pdf"  icon="/icon/ruankao.png">
+<LinkCard title="系统分析师" href="https://dingyuqi.com/pdf/certificate.pdf" target="_blank" icon="/icon/ruankao.png">
 <div style="display: flex; gap: 8px;">
     <Badge>高级</Badge> <Badge>2024年</Badge>
 </div>
