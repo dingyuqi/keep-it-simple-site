@@ -77,7 +77,7 @@ export const theme: Theme = plumeTheme({
             //   caniuse: true,
             //   plot: true,
             //   bilibili: true,
-            //   youtube: true,
+            youtube: true,
             icons: true,
             //   codepen: true,
             //   replit: true,
