@@ -50,11 +50,11 @@ Friends with the ability can go directly to the [ROS kinetic official website](h
 :::
 
 ::: steps
-1. Configure Ubuntu's resource library.
+1. Configure Ubuntu's resource library. (Optional)
    
     ![Ubuntu resource library configuration](/illustration/ubuntu-resource-conf.png)
     ::: tip
-    The URL of `Download from` is most effective when using Alibaba Cloud's link.
+    If you are in China, the URL of `Download from` is most effective when using Alibaba Cloud's link.
     ``` text
     http://mirrors.aliyun.com/ubuntu
     ```
@@ -411,7 +411,7 @@ Ubuntu16.04 must be compiled with GCC5.4, otherwise the link may fail.
 :::
 
 #### 1. Download SDK and source code
-SDK: [https://github.com/INDEMIND/SDK-Linux](https://github.com/INDEMIND/SDK-Linux)\
+SDK: [https://github.com/INDEMIND/SDK-Linux](https://github.com/INDEMIND/SDK-Linux)
 
 ORB-SLAM: [https://github.com/INDEMINDtech/run.ORB](https://github.com/INDEMINDtech/run.ORB)
 
