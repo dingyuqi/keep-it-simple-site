@@ -1,6 +1,6 @@
 ---
-title: "Centrality Algorithms: Degree Centrality | Closeness Centrality | Betweenness Centrality"
-cover: /cover/centrality-algorithm.png
+title: "Centrality Algorithms: Degree Centrality & Closeness Centrality & Betweenness Centrality"
+cover: /cover/graph-network.svg
 tags:
   - Distributed
   - Big Data
