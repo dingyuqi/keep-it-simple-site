@@ -94,11 +94,11 @@ The following figure shows the steps to calculate the betweenness score.
 
 The calculation process for node D is as follows:
 | Shortest path node pairs through D | Total number of shortest paths between node pairs $p$ | Percentage of the number of shortest paths through D $\frac{p(u)}{p}$ |
-| ----------------------- | ----------------------------- | ---------------------------------------------- |
-| (A, E) | 1 | 1 |
-| (B, E) | 1 | 1 |
-| (C, E) | 1 | 1 |
-| (B, C) | 2 (B->A->C and B->D->C respectively) | 0.5 |
+| ---------------------------------- | ----------------------------------------------------- | --------------------------------------------------------------------- |
+| (A, E)                             | 1                                                     | 1                                                                     |
+| (B, E)                             | 1                                                     | 1                                                                     |
+| (C, E)                             | 1                                                     | 1                                                                     |
+| (B, C)                             | 2 (B->A->C and B->D->C respectively)                  | 0.5                                                                   |
 
 So according to the formula, the betweenness score of node D is: `1 + 1 + 1 + 0.3 = 3.5`.
 
