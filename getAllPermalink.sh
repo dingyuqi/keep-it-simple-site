@@ -3,7 +3,7 @@
 # 定义根目录和输出文件
 root_dir="docs"
 output_file="permalinks.txt"
-base_url="https://dingyuqi.com"
+base_url="https://www.dingyuqi.com"
 
 # 创建或清空 output_file
 > "$output_file"
