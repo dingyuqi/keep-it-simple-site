@@ -72,7 +72,6 @@ Where:
 - $n$ represents the number of nodes in the same component as $u$.
 - $d(u, v)$ represents another node The shortest distance from $v$ to $u$.
 :::
-
 ## Betweenness Centrality
 Used to detect the degree of influence of a node on the information flow or resources in the graph, usually used to find nodes that bridge one part of the graph with another.
 - Input: `G = (V, E)`.
@@ -80,13 +79,15 @@ Used to detect the degree of influence of a node on the information flow or reso
 
 ### Implementation Principle
 $$
-B(u) = \sum_{s \neq u \neq t} \frac{p(u)}{p}
+BC(v) = \sum_{s \neq u \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}
 $$
-
 Where:
-- $u$ represents a node.
-- $p$ represents the sum of the shortest paths between nodes $s$ and $t$.
-- $p(u)$ represents the number of shortest paths between $s$ and $t$ through node $u$.
+
+- $v$ represents a node.
+- $\sigma_{st}$ represents the sum of the shortest paths between nodes $s$ and $t$.
+- $\sigma_{st}(v)$ represents the number of shortest paths between $s$ and $t$ that pass through node $v$.
+
+In simple terms, betweenness centrality measures the node $v$ by the proportion of the shortest paths between point pairs that pass through node $v$. Importance.
 
 The following figure shows the steps to calculate the betweenness score.
 
@@ -102,9 +103,66 @@ The calculation process for node D is as follows:
 
 So according to the formula, the betweenness score of node D is: `1 + 1 + 1 + 0.3 = 3.5`.
 
+### Algorithm Steps
+Different from linear sequential programming calculations, the algorithm given here is based on Pregel's message propagation method for calculation. It is only for reference.
+
+#### Step 1: Calculate the shortest path and the number of shortest paths between all pairs of points
+1. Initialization
+   - For source node $s$, path count $\sigma_s = 1$, path length $d_s = 0$.
+   - For other nodes, path count $\sigma = 0$, path length $d = \infty$.
+2. Message propagation
+    Assume that node $u$ sends a message to node $v$.
+     - Node $u$ message sends: $(d_u +1, \sigma_u)$, that is, path length and number of paths.
+     - Node $v$ message update:
+     - If $d_{new} < d_{current}$: update the shortest path length $d_v = d_{new}$, set the number of paths $\sigma_v=\sigma_u$.
+     - If $d_{new} = d_{current}$: It means that another path of equal length has been found, so the number of paths is increased by $\sigma_v += \sigma_u$.
+
+#### Step 2: Calculate the contribution value of each point
+$$
+contribution = \frac{\sigma_{sv} \times \sigma_{vt}}{\sigma_{st}}
+$$
+Suppose we have three nodes: source node $s$, intermediate node $v$ and target node $t$. What we need to calculate is: the proportion of the path passing through node $v$ to all shortest paths from $s$ to $t$.
+The $\sigma_{sv} \times \sigma_{vt}$ in the formula is the number of shortest paths between $s$ and $t$ that pass through $v$, which is the combination principle of the shortest path from $s$ to $t$. The shortest path of $t$ is considered as the combination of the path from $s$ to $v$ and the path from $v$ to $t$.
+``` python
+def calculate_betweenness_centrality(source, all_nodes):
+    BC_s = 0
+
+    for t in all_nodes:
+        if t == source:
+            continue
+
+        for v in all_nodes:
+            if v == source or v == t:
+                continue
+            sigma_sv = get_shortest_path_count(source, v)  
+            sigma_vt = get_shortest_path_count(v, t)     
+            sigma_st = get_shortest_path_count(source, t)
+
+            if sigma_st == 0:
+                continue
+
+            contribution = (sigma_sv * sigma_vt) / sigma_st
+
+            BC_s += contribution
+
+    return BC_s
+```
+
 ### Adaptation For Heterogeneous Graphs
-- The calculation of this indicator does not involve attributes, but only focuses on the degree of the graph structure.
-- Only the degree under the same label is calculated.
+- This indicator calculation does not involve attributes, only the degree of the graph structure.
+- Only calculate the degree under the same label.
+
+## Summary
+This article introduces three different centrality algorithms, each of which identifies important nodes in the graph from different perspectives.
+- Degree centrality algorithm
+  
+  The importance of nodes is evaluated by calculating the in-and-out degree of each node. Nodes with high degree centrality mean that they are connected to more nodes.
+- Closeness centrality
+  
+  The importance of nodes is measured by calculating the average distance to other nodes. Nodes with high closeness centrality mean a more central position in the graph, and the path from it to all other nodes is shorter, which will be faster if messages are propagated.
+- Betweenness centrality
+  
+  The importance of nodes is measured by calculating the probability that the shortest path between other nodes passes through itself. It is usually used to detect the degree of influence of nodes on information flow or resources in the graph. Nodes with high betweenness centrality mean that they are important bridges between two groups of nodes in the graph.
 
 <br /><br /><br />
 
