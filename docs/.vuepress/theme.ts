@@ -49,7 +49,7 @@ export const theme: Theme = plumeTheme({
          * @see https://theme-plume.vuejs.press/config/plugins/markdown-enhance/
          */
         markdownEnhance: {
-            demo: true,
+            demo: false,
             //   include: true,
             //   chart: true,
             //   echarts: true,
@@ -62,7 +62,7 @@ export const theme: Theme = plumeTheme({
             // 启用 figure
             figure: true,
             // 启用图片懒加载
-            // lazyload: true,
+            lazyload: true,
             // 启用图片标记
             mark: true,
             // 启用图片大小
@@ -79,6 +79,7 @@ export const theme: Theme = plumeTheme({
             //   bilibili: true,
             youtube: true,
             icons: true,
+            demo: true,
             //   codepen: true,
             //   replit: true,
             //   codeSandbox: true,
