@@ -3,10 +3,8 @@ import type { Theme } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
 export const theme: Theme = plumeTheme({
-    // 添加您的部署域名
     hostname: 'https://dingyuqi.com',
-    // your git repo url
-    docsRepo: 'https://github.com/dingyuqi/blog-with-plume-theme',
+    docsRepo: 'https://github.com/dingyuqi/keep-it-simple-site',
     docsDir: 'docs',
     contributors: {
         mode: 'block',
@@ -15,8 +13,6 @@ export const theme: Theme = plumeTheme({
     copyright: 'CC-BY-NC-ND-4.0',
     footer: { message: 'Keep It Simple', copyright: 'Copyright © 2021-present dingyuqi. All rights reserved.' },
     blog: {
-        // 配置 封面图 布局位置
-        // postCover: 'left', // 'left' | 'right' | 'odd-left' | 'odd-right' | 'top'
         postCover: {
             layout: 'left',
             ratio: '4:3',
@@ -40,8 +36,8 @@ export const theme: Theme = plumeTheme({
          * @see https://theme-plume.vuejs.press/config/plugins/code-highlight/
          */
         shiki: {
-            languages: ["sql", "shell", "mermaid", "go", "html", "php", "python", "bash", "c++", "js", "ts", "css", "yaml", "md"],
-            //   twoslash: true,
+            languages: ["sql", "shell", "mermaid", "go", "html", "php", "python", "bash", "c++", "js", "css", "yaml", "md"],
+            whitespace: true,
         },
 
         /**
@@ -50,22 +46,14 @@ export const theme: Theme = plumeTheme({
          */
         markdownEnhance: {
             demo: false,
-            //   include: true,
-            //   chart: true,
-            //   echarts: true,
             mermaid: true,
             markmap: true,
-            //   flowchart: true,
         },
 
         markdownImage: {
-            // 启用 figure
             figure: true,
-            // 启用图片懒加载
             lazyload: true,
-            // 启用图片标记
             mark: true,
-            // 启用图片大小
             size: true,
         },
         /**
@@ -73,33 +61,22 @@ export const theme: Theme = plumeTheme({
          * @see https://theme-plume.vuejs.press/config/plugin/markdown-power/
          */
         markdownPower: {
-            //   pdf: true,
-            //   caniuse: true,
-            //   plot: true,
-            //   bilibili: true,
             youtube: true,
             icons: true,
             demo: true,
-            //   codepen: true,
-            //   replit: true,
-            //   codeSandbox: true,
-            //   jsfiddle: true,
             repl: {
                 go: true,
-                //     rust: true,
-                //     kotlin: true,
             },
             codeTabs: {
-                icon: true, // CodeTabsOptions
+                icon: true,
             }
         },
-
         /**
          * comments
          * @see https://theme-plume.vuejs.press/guide/features/comments/
          */
         comment: {
-            provider: 'Giscus', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
+            provider: 'Giscus',
             comment: true,
             repo: 'dingyuqi/blog-with-plume-theme',
             repoId: 'R_kgDOM0ffQg',
@@ -109,15 +86,9 @@ export const theme: Theme = plumeTheme({
             reactionsEnabled: true,
             inputPosition: 'top',
         },
-
-        /**
-         * local mini search
-         */
+        // local mini search
         search: false,
-
-        /**
-         * Algolia DocSearch
-         */
+        // Algolia DocSearch
         docsearch: {
             appId: 'KFGYVIHG31',
             apiKey: 'c78d52bca994ea6b299b4bffb41c98a2',
