@@ -23,7 +23,7 @@ From 2017 to 2021, I studied at [Southeast University](https://www.seu.edu.cn/),
 
 <CardGrid>
 <LinkCard title="Shaofu Yang" href="https://sfyangcs.github.io/"  icon="/avatar/ysf.jpg" description="Advisor"/>
-<LinkCard title="Affine transformation of distributed unmanned vehicle platoon" href="https://dingyuqi.com/pdf/thesis.pdf"  icon=skill-icons:ros-dark description="Undergraduate thesis"/>
+<LinkCard title="Affine transformation of distributed unmanned vehicle platoon" href="/pdf/thesis.pdf"  icon=skill-icons:ros-dark description="Undergraduate thesis"/>
 </CardGrid>
 
 ## Shenzhen Institute of Computing Science <Badge>July 2021 - present</Badge>
@@ -60,7 +60,7 @@ Computer Technology and Software Professional Technical Qualification.
 </LinkCard>
 
 ## Tech Stack
-<picture><img src="https://go-skill-icons.vercel.app/api/icons?i=go,py,redis,mysql,oracle,postgres,kafka,grpc,flask&perline=5"></picture>
+<picture><img src="https://go-skill-icons.vercel.app/api/icons?i=go,py,gin,flask,redis,mysql,oracle,postgres,kafka,etcd,grpc&perline=5"></picture>
 
 ## Tools I Use
 <picture><img src="https://go-skill-icons.vercel.app/api/icons?i=vscode,goland,pycharm,dbeaver,git,github,kubernetes,docker,vercel,jenkins,grafana&perline=5"></picture>
