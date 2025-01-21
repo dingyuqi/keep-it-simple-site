@@ -7,7 +7,7 @@ tags:
 createTime: 2024/11/26 10:18:51
 permalink: /en/article/s1n21jo1/
 ---
-"Consistent Hash" seems to be a confusing name, because the result of the hash function should be the same no matter where it is calculated, so why is there a consistency problem? 
+"Consistent Hash" seems to be a confusing name, because the result of the hash function should be the same no matter where it is calculated, so why is there a consistency problem?
 <!-- more -->
 
 In fact, we proposed the concept of Consistent Hash to solve the problem in distributed storage. In distributed storage, different machines will store data of different objects, and we use hash functions to establish a mapping relationship between data and servers. So why is there "inconsistency"?

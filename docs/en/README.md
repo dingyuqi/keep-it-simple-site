@@ -20,7 +20,7 @@ config:
           theme: brand
           text: 😶 About me
           link: /en/about-me/
-        - 
+        -
           theme: alt
           text: Github ->
           link: https://github.com/dingyuqi

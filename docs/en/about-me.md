@@ -34,7 +34,7 @@ From 2017 to 2021, I studied at [Southeast University](https://www.seu.edu.cn/),
 <Badge>December 2023 - present</Badge>
 Engaged in the system backend development work of ToB and ToG, and participated in the delivery of multiple projects. The main development languages ​​are **Go** and **Python**.
 
-@tab Algorithm Engineer 
+@tab Algorithm Engineer
 <Badge>July 2021 - December 2023</Badge>
 Engaged in the development of big data graph data mining algorithms, the main development languages ​​are **Go** and **Python**.
 
