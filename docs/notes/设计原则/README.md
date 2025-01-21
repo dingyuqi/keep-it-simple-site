@@ -17,7 +17,7 @@ copyright: false
 与**面向对象编程(OOP)**相对应的, 还有**面向过程编程(POP)**. 这两种编程范式分别代表了两种代码组织的思想. 我们将以写一个下五子棋的小程序为例, 来看一下两种不同的思想会如何来组织下棋这个相同的功能.
 
 ### 面向过程(POP)
-对于下棋这件事情, 我们分为显示棋盘, 下棋和检查胜利几个步骤. 通过不断循环几个函数来达成下棋的功能. 
+对于下棋这件事情, 我们分为显示棋盘, 下棋和检查胜利几个步骤. 通过不断循环几个函数来达成下棋的功能.
 
 可以参考下面的伪代码:
 ::: code-tabs
@@ -83,7 +83,7 @@ if __name__ == "__main__":
         if board.victoryConditionCheck(curPlayer):
             print(f">>>当前玩家{curPlayer.name}胜利!")
             break
-        
+
         curPlayer = switchPlayer(curPlayer)
 ```
 :::
@@ -113,4 +113,3 @@ if __name__ == "__main__":
   <LinkCard title="依赖倒置原则" href="/designModel/hp4bylot/" />
   <LinkCard title="组合复用原则" href="/article/vuqkixk6/" />
 </CardGrid>
-

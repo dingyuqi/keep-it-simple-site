@@ -26,9 +26,9 @@ java -version
 ```
 
 ### 安装 Jenkins
-Jenkins 下载地址: <https://jenkins.io/download/> , 下载 war 包, 命令行安装. 
+Jenkins 下载地址: <https://jenkins.io/download/> , 下载 war 包, 命令行安装.
 
-下载完成后, 进入命令行模式, 直接定位到 jenkins.war 所在的目录, 然后执行下面的命令: 
+下载完成后, 进入命令行模式, 直接定位到 jenkins.war 所在的目录, 然后执行下面的命令:
 
 ```shell
 java -jar jenkins.war
@@ -48,7 +48,7 @@ java -jar jenkins.war
 
 
 ### 安装 Jenkins 的插件
-Jenkins 安装成功后, 可已经将它设置成 ***Windows服务***, 不用每次通过命令提示符输入命令启动了. 设置成服务的方法如下: 
+Jenkins 安装成功后, 可已经将它设置成 ***Windows服务***, 不用每次通过命令提示符输入命令启动了. 设置成服务的方法如下:
 
 ![install-jenkins-plugin-1](/illustration/install-jenkins-plugin-1.png)
 
@@ -64,10 +64,10 @@ Jenkins 安装成功后, 可已经将它设置成 ***Windows服务***, 不用每
 
 ![install-jenkins-plugin-5](/illustration/install-jenkins-plugin-5.png)
 
-之后点击确定, 在此账户中显示正确的用户之后填写正确的用户密码即可之后点击确定. 
+之后点击确定, 在此账户中显示正确的用户之后填写正确的用户密码即可之后点击确定.
 
 ### 插件下载提速
-默认插件下载是从 Jenkins 官网的地址下载, 太慢了. 将地址替换为以下地址: 
+默认插件下载是从 Jenkins 官网的地址下载, 太慢了. 将地址替换为以下地址:
 
 ```text
 https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json
@@ -93,18 +93,18 @@ https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json
 替换 url 为 https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json
 ```
 
-如果还不行, 就离线下载 [Jenkins 插件](http://updates.jenkins-ci.org/download/plugins/), 然后采用上传的方式.  
+如果还不行, 就离线下载 [Jenkins 插件](http://updates.jenkins-ci.org/download/plugins/), 然后采用上传的方式.
 
 ### Jenkins 汉化
 进入 **系统管理->插件管理**, 安装插件: Localization:Chinese, 之后重启 Jenkins 服务, 能够部分汉化.
 
 ### Git 和 Gitlab 插件安装
-进入 **系统管理->插件管理**, 安装 Git 和 Gitlab 插件. Git 插件有几个依赖, 如果安装不上就离线安装. 
+进入 **系统管理->插件管理**, 安装 Git 和 Gitlab 插件. Git 插件有几个依赖, 如果安装不上就离线安装.
 
 ```
 scm-api (1.0),
 workflow-scm-step (1.14.2)
-Git-client (1.19.6) 
+Git-client (1.19.6)
 workflow-setp-api.hpi(1.14.2)(貌似与workflow-scm-step保持一致)
 ```
 
@@ -120,7 +120,7 @@ TestConnection 测试连接成功后保存退出.
 ## Jenkins 创建项目
 ::: steps
 1. 创建项目
-  
+
     ![jenkins-create-item-1](/illustration/jenkins-create-item-1.png)
 
 2. 配置项目名称和项目类型
@@ -152,10 +152,10 @@ TestConnection 测试连接成功后保存退出.
 
 8. 配置 Shell executable
 
-    如果"增加构建步骤"中需要执行 Git 命令, 则需要配置 Shell executable. 
+    如果"增加构建步骤"中需要执行 Git 命令, 则需要配置 Shell executable.
 
     进入**系统配置**, 找到**Shell**,  将 Shell executable 配置为 `C:\Program Files\Git\bin\sh.exe`.
-    
+
     ![jenkins-create-item-10](/illustration/jenkins-create-item-10.png)
 :::
 
@@ -178,20 +178,20 @@ ls
 
 如果显示有 `id_rsa` 命名的文件, 其中一个带有 `.pub` 扩展名, 则说明已经拥有密钥. **你所要确保的是在 `C:/User/xxxx/.ssh` 这个文件夹底下和Git自己创建的 `/z/.ssh` 底下都分别有同样的一组 `id_rsa` 文件(否则只能pull不能push)**
 
-如果之前没有密钥, 则输入以下命令, 建立新的SSH公钥和密钥. 
+如果之前没有密钥, 则输入以下命令, 建立新的SSH公钥和密钥.
 ```bash
 ssh-keygen
 ```
-如果不希望更改密钥生成的位置, 则在提示 `Enter file in which to save the key ` 时直接回车, 之后按照提示输入两次 Git 密码则可以在 `/z/.ssh` 底下看到新生成的密钥. 
+如果不希望更改密钥生成的位置, 则在提示 `Enter file in which to save the key ` 时直接回车, 之后按照提示输入两次 Git 密码则可以在 `/z/.ssh` 底下看到新生成的密钥.
 
-输入命令来获取公钥: 
+输入命令来获取公钥:
 
 ``` bash
 cd /z/.ssh
 cat id_rsa.pub
 ```
 
-到 **Gitlab->Setting->SSH加密** 中创建新密钥, 将公钥的全部内容(包括第一行的 SSH)复制到其中, 点击确定即可. 
+到 **Gitlab->Setting->SSH加密** 中创建新密钥, 将公钥的全部内容(包括第一行的 SSH)复制到其中, 点击确定即可.
 
 ## 开始打包
 ::: steps

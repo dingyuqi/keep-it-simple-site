@@ -234,7 +234,7 @@ However, you can adjust the corresponding parameters according to the characteri
 
 ::: info References for this article
 1. [architecture-and-tuning-memory-postgresql-databases](https://severalnines.com/blog/architecture-and-tuning-memory-postgresql-databases)
-2. [postgresql-out-of-memory](https://italux.medium.com/postgresql-out-of-memory-3fc1105446d) 
-3. [Tuning Your PostgreSQL Server](https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server) 
-4. ["How to practice PostgreSQL"](https://book.douban.com/subject/35224053/) 
+2. [postgresql-out-of-memory](https://italux.medium.com/postgresql-out-of-memory-3fc1105446d)
+3. [Tuning Your PostgreSQL Server](https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server)
+4. ["How to practice PostgreSQL"](https://book.douban.com/subject/35224053/)
 :::
