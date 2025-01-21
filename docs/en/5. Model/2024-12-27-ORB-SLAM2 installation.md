@@ -51,7 +51,7 @@ Friends with the ability can go directly to the [ROS kinetic official website](h
 
 ::: steps
 1. Configure Ubuntu's resource library. (Optional)
-   
+
     ![Ubuntu resource library configuration](/illustration/ubuntu-resource-conf.png)
     ::: tip
     If you are in China, the URL of `Download from` is most effective when using Alibaba Cloud's link.

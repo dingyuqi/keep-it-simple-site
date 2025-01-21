@@ -134,8 +134,8 @@ def calculate_betweenness_centrality(source, all_nodes):
         for v in all_nodes:
             if v == source or v == t:
                 continue
-            sigma_sv = get_shortest_path_count(source, v)  
-            sigma_vt = get_shortest_path_count(v, t)     
+            sigma_sv = get_shortest_path_count(source, v)
+            sigma_vt = get_shortest_path_count(v, t)
             sigma_st = get_shortest_path_count(source, t)
 
             if sigma_st == 0:
@@ -155,13 +155,13 @@ def calculate_betweenness_centrality(source, all_nodes):
 ## Summary
 This article introduces three different centrality algorithms, each of which identifies important nodes in the graph from different perspectives.
 - Degree centrality algorithm
-  
+
   The importance of nodes is evaluated by calculating the in-and-out degree of each node. Nodes with high degree centrality mean that they are connected to more nodes.
 - Closeness centrality
-  
+
   The importance of nodes is measured by calculating the average distance to other nodes. Nodes with high closeness centrality mean a more central position in the graph, and the path from it to all other nodes is shorter, which will be faster if messages are propagated.
 - Betweenness centrality
-  
+
   The importance of nodes is measured by calculating the probability that the shortest path between other nodes passes through itself. It is usually used to detect the degree of influence of nodes on information flow or resources in the graph. Nodes with high betweenness centrality mean that they are important bridges between two groups of nodes in the graph.
 
 <br /><br /><br />
