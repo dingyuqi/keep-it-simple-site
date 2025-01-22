@@ -123,6 +123,9 @@ contribution = \frac{\sigma_{sv} \times \sigma_{vt}}{\sigma_{st}}
 $$
 Suppose we have three nodes: source node $s$, intermediate node $v$ and target node $t$. What we need to calculate is: the proportion of the path passing through node $v$ to all shortest paths from $s$ to $t$.
 The $\sigma_{sv} \times \sigma_{vt}$ in the formula is the number of shortest paths between $s$ and $t$ that pass through $v$, which is the combination principle of the shortest path from $s$ to $t$. The shortest path of $t$ is considered as the combination of the path from $s$ to $v$ and the path from $v$ to $t$.
+
+::: code-tabs
+@tab betweenness_centrality.py
 ``` python
 def calculate_betweenness_centrality(source, all_nodes):
     BC_s = 0
@@ -147,6 +150,7 @@ def calculate_betweenness_centrality(source, all_nodes):
 
     return BC_s
 ```
+:::
 
 ### Adaptation For Heterogeneous Graphs
 - This indicator calculation does not involve attributes, only the degree of the graph structure.
