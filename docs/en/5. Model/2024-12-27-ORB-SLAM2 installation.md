@@ -2,6 +2,7 @@
 title: ORB-SLAM2 Installation Guide
 tags:
   - Installation Guide
+  - Model
 createTime: 2024/12/27 09:48:12
 permalink: /en/article/orb-slam2-installation-guide/
 ---
