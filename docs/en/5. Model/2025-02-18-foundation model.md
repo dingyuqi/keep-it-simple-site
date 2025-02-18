@@ -2,7 +2,7 @@
 title: Overview of Fundation Models
 tags:
   - Model
-permalink: /article/what-is-fundation-models/
+permalink: /en/article/what-is-fundation-models/
 createTime: 2025/02/18 16:05:25
 ---
 With the development of the times, the application of foundation models in various fields is expanding. This article tries its best to sort out various materials and will give a brief overview of foundation models from the aspects of concept definition, type classification, training and application.
