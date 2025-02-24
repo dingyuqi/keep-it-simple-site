@@ -69,7 +69,9 @@ export const theme: Theme = plumeTheme({
             },
             codeTabs: {
                 icon: true,
-            }
+            },
+			abbr: true,
+			annotation: true,
         },
         /**
          * comments
