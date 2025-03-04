@@ -53,7 +53,7 @@ When the first phase `Prepare` ends, the coordinator will receive feedback from 
     ![2PC Commit Phase - rollback](/illustration/2PC-rollback.png)
 :::
 
-### Defects
+### Defects {#2PC-Defects}
 - Performance issues.
 
     During the execution process, all participating nodes are transaction blocking. After the participants lock the public resources, the third party has to be in a blocked state when accessing.
@@ -138,19 +138,19 @@ If the coordinator receives a ==No response== from any participant in the `PreCo
 ### Optimization compared to 2PC
 - Timeout mechanism.
 
-3PC introduces a timeout mechanism for participants, which may occur in the `PreCommit` and `DoCommit` phases.
-- Participants will abandon execution if a timeout occurs in the `PreCommit` phase, and will execute the commit in the `DoCommit` phase.
-- The coordinator will send a rollback at any time when a timeout occurs.
+	3PC introduces a timeout mechanism for participants, which may occur in the `PreCommit` and `DoCommit` phases.
+    - Participants will abandon execution if a timeout occurs in the `PreCommit` phase, and will execute the commit in the `DoCommit` phase.
+    - The coordinator will send a rollback at any time when a timeout occurs.
 
-This avoids the problem in 2PC that participants cannot release resources when they cannot communicate with the coordinator for a long time or the coordinator is down. That is, [single point failure problem](#defect).
+	This avoids the problem in 2PC that participants cannot release resources when they cannot communicate with the coordinator for a long time or the coordinator is down. That is, [single point failure problem](#2PC-Defects).
 - Performance optimization.
 
-3PC adds a `CanCommit` stage, at which participants do not hold database locks. 3PC reduces the time participants hold locks.
+	3PC adds a `CanCommit` stage, at which participants do not hold database locks. 3PC reduces the time participants hold locks.
 
 ### Defect
 - Data consistency problem.
 
-3PC still does not completely solve the problem of data inconsistency caused by local network problems.
+	3PC still does not completely solve the problem of data inconsistency caused by local network problems.
 
 ## TCC
 TCC (Try-Confirm-Cancel) is also known as: compensation transaction. Its core idea is: for each operation, a corresponding confirmation and compensation must be registered. Unlike 2PC and 3PC, TCC introduces a transaction coordination service for scheduling.
