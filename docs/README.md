@@ -31,7 +31,7 @@ config:
       -
         title: 论文笔记
         icon: 📖
-        details: 樊文飞院士的论文解读(DGFD, GAR)
+        details: 樊文飞院士的论文解读（DGFD, GAR）
         link: /paperNote/
       -
         title: 数据库
