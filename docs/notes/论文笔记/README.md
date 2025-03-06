@@ -10,6 +10,6 @@ contributors: false
 changelog: false
 copyright: false
 ---
-本栏目用于记录论文的翻译和笔记, 以及工程中应用的经验.
+本栏目用于记录论文的翻译和笔记，以及工程中应用的经验。
 
-:[logos:github-octocat 48px]: **本系列计划长期连载**
+:[logos:github-octocat 48px]: **本系列计划长期连载**。
