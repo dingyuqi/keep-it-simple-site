@@ -18,7 +18,7 @@ copyright: false
   <img  src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=59c798&center=true&vCenter=true&random=false&width=280&lines=Welcome+to+my+blog">
 </div>
 
-##  Southeast University ![seu](/logo/SEU.png =30x)
+##  Southeast University ![seu](/logo/seu.svg =50x)
 From 2017 to 2021, I studied at [Southeast University](https://www.seu.edu.cn/), majoring in Computer Science and Technology.
 
 <CardGrid>

@@ -9,7 +9,7 @@ With the development of the times, the application of foundation models in vario
 
 If you want to understand foundation models but lack basic knowledge or feel that you have no idea where to start, then reading this article may help you.
 
-![openAI logo](/logo/OpenAI.png =500x)
+![deepseek logo](/logo/deepseek-light.svg)
 <!-- more -->
 
 ## Concept Definition
