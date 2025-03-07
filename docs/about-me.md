@@ -18,7 +18,7 @@ copyright: false
   <img  src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=59c798&center=true&vCenter=true&random=false&width=280&lines=Welcome+to+my+blog">
 </div>
 
-##  东南大学 ![seu](/logo/SEU.png =30x)
+##  东南大学  ![seu](/logo/seu.svg =50x)
 2017 - 2021 年就读于[东南大学](https://www.seu.edu.cn/)，计算机科学与技术专业。
 
 <CardGrid>

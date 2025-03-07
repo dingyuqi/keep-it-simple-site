@@ -3,14 +3,14 @@ title: How does Postgres manage memory? How to tune memory?
 tags:
   - Performance
   - Relational database
-cover: /logo/PostgreSQL.png
+cover: /logo/postgresql-light.svg
 createTime: 2024/12/19 14:57:16
 permalink: /en/article/postgres-memory-management/
 ---
 This document mainly records the learning content in the process of troubleshooting the problem of query interface timeout caused by excessive memory usage of PostgreSQL database during large-scale writes. It mainly focuses on memory management and learns the relevant core architecture of PostgreSQL.
 <!-- more -->
 
-![PostgreSQL logo](/logo/PostgreSQL.png =100x)
+![PostgreSQL logo](/logo/postgresql-light.svg)
 
 ## PostgreSQL Process Structure
 
