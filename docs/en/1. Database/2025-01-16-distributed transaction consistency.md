@@ -6,6 +6,7 @@ permalink: /en/article/distributed-transaction-consistency-solution/
 ---
 In today's microservice architecture, how to ensure the consistency of distributed transactions is a problem that every backend development engineer may encounter.
 <!-- more -->
+
 Although there are very mature solutions for the consistency of distributed transactions (for example: 2PC, 3PC, TCC, etc.), I found that there are few articles explaining the problems that may be encountered, that is, the defects of each solution. In fact, these defects are exactly what engineers must pay attention to, which is related to the stability of the system and the problems you may encounter in the production environment.
 
 This article will introduce each solution in a relatively simple language, and then focus on their defects and how to improve them.
@@ -28,7 +29,7 @@ Let's now take a look at what the coordinator and participants do in the two sta
 #### Prepare
 When we start a distributed transaction, the 2PC algorithm will enter the `Prepare` stage, and all participants will try to execute this transaction locally.
 
-![2PC Prepare Phase](/illustration/2PC-prepare.png)
+![2PC Prepare Phase](/illustration/en/2PC-prepare.png)
 
 ::: steps
 1. The coordinator issues transaction commands to all participants.
@@ -46,11 +47,11 @@ When the first phase `Prepare` ends, the coordinator will receive feedback from 
 
 2. If all are successful, the `commit` command is issued to all participants.
 
-    ![2PC Commit Phase - commit](/illustration/2PC-commit.png)
+    ![2PC Commit Phase - commit](/illustration/en/2PC-commit.png)
 
 3. If any participant fails, the `rollback` command is issued to all participants.
 
-    ![2PC Commit Phase - rollback](/illustration/2PC-rollback.png)
+    ![2PC Commit Phase - rollback](/illustration/en/2PC-rollback.png)
 :::
 
 ### Defects {#2PC-Defects}
@@ -163,7 +164,7 @@ Confirm the execution of business operations.
 #### Cancel stage
 Cancel the execution of business operations.
 
-![TCC principle diagram](/illustration/tcc-process.png)
+![TCC principle diagram](/illustration/en/tcc-process.png)
 
 ::: tip In most financial scenarios, TCC is used to ensure the consistency of distributed transactions. Because in this more rigorous business scenario, we need to have higher control over each business process.
 :::
