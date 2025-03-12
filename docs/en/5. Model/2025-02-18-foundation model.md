@@ -4,13 +4,14 @@ tags:
   - Model
 permalink: /en/article/what-is-fundation-models/
 createTime: 2025/02/18 16:05:25
+cover: /logo/deepseek-light.svg
 ---
 With the development of the times, the application of foundation models in various fields is expanding. This article tries its best to sort out various materials and will give a brief overview of foundation models from the aspects of concept definition, type classification, training and application.
+<!-- more -->
 
 If you want to understand foundation models but lack basic knowledge or feel that you have no idea where to start, then reading this article may help you.
 
 ![deepseek logo](/logo/deepseek-light.svg)
-<!-- more -->
 
 ## Concept Definition
 ### Main Concepts of Artificial Intelligence
