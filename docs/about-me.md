@@ -30,13 +30,13 @@ copyright: false
 ::: tabs
 @tab 后端工程师
 <Badge>2023 年 12 月 - 至今</Badge>
-从事 ToB 端的系统后端开发工作，参与多个项目的交付工作. 主要开发语言为 **Go** 和 **Python**。
+从事 ToB 端的系统后端开发工作，参与多个项目的交付工作。主要开发语言为 **Go** 和 **Python**。
 
 @tab 算法工程师
 <Badge>2021 年 07 月 - 2023 年 12 月</Badge>
 从事大数据图数据挖掘算法的开发工作，主要开发语言为 **Go** 和 **Python**。
 
-主要负责[钓鱼城数据分析系统](https://www.sics.ac.cn/col8/index)的新功能迭代以及日常维护。"钓鱼城系统"是一个基于图数据的数据挖掘系统。其挖掘算法核心实现的是本院首席科学家：[樊文飞院士](https://baike.baidu.com/item/%E6%A8%8A%E6%96%87%E9%A3%9E/11051353)的相关论文　DGFD，GAR 等。
+主要负责[钓鱼城数据分析系统](https://www.sics.ac.cn/col8/index)的新功能迭代以及日常维护。钓鱼城系统是一个基于图数据的数据挖掘系统。其挖掘算法核心实现的是本院首席科学家：[樊文飞院士](https://baike.baidu.com/item/%E6%A8%8A%E6%96%87%E9%A3%9E/11051353)的相关论文 DGFD，GAR 等。
 :::
 
 ## 证书
@@ -45,16 +45,6 @@ copyright: false
     <Badge>高级</Badge> <Badge>2024 年</Badge>
 </div>
 计算机技术与软件专业技术资格
-</LinkCard>
-
-## 简历
-<LinkCard title="简历" icon="/icon/OIP.png">
-<div style="display: flex; gap: 8px;">
-  <Badge>微服务</Badge>
-  <Badge>分布式</Badge>
-  <Badge>Redis</Badge>
-  <Badge>MySQL</Badge>
-</div>
 </LinkCard>
 
 ## Tech Stack

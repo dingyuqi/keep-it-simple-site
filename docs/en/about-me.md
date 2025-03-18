@@ -49,16 +49,6 @@ Mainly responsible for the new function iteration and daily maintenance of the [
 Computer Technology and Software Professional Technical Qualification.
 </LinkCard>
 
-## Resume
-<LinkCard title="Resume" icon="/icon/OIP.png">
-<div style="display: flex; gap: 8px;">
-  <Badge>Microservices</Badge>
-  <Badge>Distributed System</Badge>
-  <Badge>Redis</Badge>
-  <Badge>MySQL</Badge>
-</div>
-</LinkCard>
-
 ## Tech Stack
 <picture><img src="https://go-skill-icons.vercel.app/api/icons?i=go,py,gin,flask,redis,mysql,oracle,postgres,hadoop,kafka,etcd,grpc&perline=5"></picture>
 
