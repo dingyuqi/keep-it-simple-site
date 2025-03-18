@@ -17,7 +17,6 @@ export const theme: Theme = plumeTheme({
 			layout: 'left',
 			ratio: '4:3',
 			width: 300,
-			compact: true
 		},
 		pagination: {
 			perPage: 10,
