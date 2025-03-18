@@ -4,12 +4,12 @@ import CustomComponent from './theme/components/Custom.vue'
 
 import './theme/styles/custom.css'
 import { inject } from '@vercel/analytics';
- 
+
 inject();
 
 export default defineClientConfig({
-  enhance({ app }) {
-    app.component('RepoCard', RepoCard)
-    app.component('CustomComponent', CustomComponent)
-  },
+	enhance({ app }) {
+		app.component('RepoCard', RepoCard)
+		app.component('CustomComponent', CustomComponent)
+	},
 })
