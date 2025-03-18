@@ -9,25 +9,24 @@ import enResource from './notes/en/resource'
 /* =================== locale: zh-CN ======================= */
 
 export const zhNotes = defineNotesConfig({
-  // 声明所有笔记的目录，(默认配置，通常您不需要声明它)
-  dir: '/notes/',
-  link: '/', // 声明所有笔记默认的链接前缀， 默认为 '/' （默认配置，通常您不需要声明它）
-  notes: [
-    dataMining,
-    paper,
-    codeDesign,
-    interview,
-    zhResource
-  ]
+	// 声明所有笔记的目录，(默认配置，通常您不需要声明它)
+	dir: '/notes/',
+	link: '/', // 声明所有笔记默认的链接前缀， 默认为 '/' （默认配置，通常您不需要声明它）
+	notes: [
+		dataMining,
+		paper,
+		codeDesign,
+		interview,
+		zhResource
+	]
 })
 
 /* =================== locale: en-US ======================= */
 
 export const enNotes = defineNotesConfig({
-  dir: 'en/notes',
-  link: '/en/',
-  notes: [
-    enResource
-  ],
+	dir: 'en/notes',
+	link: '/en/',
+	notes: [
+		enResource
+	],
 })
-
