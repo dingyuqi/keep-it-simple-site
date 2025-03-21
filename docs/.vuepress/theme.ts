@@ -9,7 +9,7 @@ export const theme: Theme = plumeTheme({
 	contributors: {
 		mode: 'block',
 	},
-	changelog: true,
+	changelog: { maxCount: 10 },
 	copyright: 'CC-BY-NC-ND-4.0',
 	footer: { message: 'Keep It Simple', copyright: 'Copyright © 2021-present dingyuqi. All rights reserved.' },
 	blog: {
@@ -24,6 +24,8 @@ export const theme: Theme = plumeTheme({
 	},
 	codeHighlighter: {
 		lineNumbers: true,
+		whitespace: true,
+		collapsedLines: 20,
 	},
 	bulletin: {
 		layout: 'top-right',
@@ -32,58 +34,37 @@ export const theme: Theme = plumeTheme({
 		contentFile: path.join(__dirname, '_limit_english_bulletin.md'),
 		enablePage: page => page.path === '/en/',
 	},
-	plugins: {
-		shiki: {
-			whitespace: true,
+	search: {
+		provider: 'algolia',
+		appId: 'KFGYVIHG31',
+		apiKey: 'c78d52bca994ea6b299b4bffb41c98a2',
+		indexName: 'dingyuqi',
+	},
+	markdown: {
+		markmap: true,
+		mermaid: true,
+		demo: true,
+		fileTree: { icon: 'colored' },
+		youtube: true,
+		repl: {
+			go: true,
 		},
-
-		markdownEnhance: {
-			demo: false,
-			mermaid: true,
-			markmap: true,
-		},
-
-		markdownImage: {
+		image: {
 			figure: true,
 			lazyload: true,
 			mark: true,
 			size: true,
-		},
-
-		markdownPower: {
-			youtube: true,
-			icons: true,
-			demo: true,
-			repl: {
-				go: true,
-			},
-			codeTabs: {
-				icon: true,
-			},
-			abbr: true,
-			annotation: true,
-		},
-
-		comment: {
-			provider: 'Giscus',
-			comment: true,
-			repo: 'dingyuqi/blog-with-plume-theme',
-			repoId: 'R_kgDOM0ffQg',
-			categoryId: 'DIC_kwDOM0ffQs4CkKcH',
-			category: 'Announcements',
-			mapping: 'title',
-			reactionsEnabled: true,
-			inputPosition: 'top',
-		},
-		// local mini search
-		search: false,
-		// Algolia DocSearch
-		docsearch: {
-			appId: 'KFGYVIHG31',
-			apiKey: 'c78d52bca994ea6b299b4bffb41c98a2',
-			indexName: 'dingyuqi',
-		},
-
-		git: true,
+		}
+	},
+	comment: {
+		provider: 'Giscus',
+		comment: true,
+		repo: 'dingyuqi/blog-with-plume-theme',
+		repoId: 'R_kgDOM0ffQg',
+		categoryId: 'DIC_kwDOM0ffQs4CkKcH',
+		category: 'Announcements',
+		mapping: 'title',
+		reactionsEnabled: true,
+		inputPosition: 'top',
 	},
 })
