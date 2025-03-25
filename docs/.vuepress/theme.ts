@@ -41,6 +41,8 @@ export const theme: Theme = plumeTheme({
 		indexName: 'dingyuqi',
 	},
 	markdown: {
+		abbr: true,
+		annotation: true,
 		markmap: true,
 		mermaid: true,
 		demo: true,
