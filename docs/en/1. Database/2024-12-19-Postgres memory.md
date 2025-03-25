@@ -2,7 +2,7 @@
 title: How does Postgres manage memory? How to tune memory?
 tags:
   - Performance
-  - Relational database
+  - Relational Database
 cover: /logo/postgresql-light.svg
 createTime: 2024/12/19 14:57:16
 permalink: /en/article/postgres-memory-management/

@@ -2,7 +2,7 @@
 title: "Gene method: Solve the query of non-sharding key in the case of sharding"
 tags:
   - Distributed
-  - Big data
+  - Big Data
 createTime: 2024/11/26 10:27:48
 permalink: /en/article/xa8pmz6z/
 ---

@@ -1,5 +1,8 @@
 ---
 title: How to reduce inventory under high concurrency?
+tags:
+  - Big Data
+  - Middleware
 permalink: /en/article/designing-inventory-deduction-systems-under-high-concurrency/
 createTime: 2025/03/19 15:56:13
 ---

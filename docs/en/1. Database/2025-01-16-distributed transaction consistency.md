@@ -1,5 +1,8 @@
 ---
 title: What problems will we encounter in the process of ensuring the consistency of distributed transactions?
+tags:
+  - Relational Database
+  - Distributed
 cover: /cover/distributed-system.png
 createTime: 2025/01/09 11:08:10
 permalink: /en/article/distributed-transaction-consistency-solution/
