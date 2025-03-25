@@ -1,5 +1,6 @@
 ---
-title: 论文笔记首页
+title: 论文笔记前言
+icon: material-symbols:info-outline-rounded
 createTime: 2024/09/20 16:15:12
 permalink: /paperNote/
 aside: false
