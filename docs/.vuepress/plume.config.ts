@@ -11,7 +11,7 @@ export default defineThemeConfig({
 	profile: {
 		avatar: '/icon/icon.ico',
 		name: 'Keep It Simple',
-		description: 'A website for study notes.',
+		description: 'Everything can be explained in one sentence.',
 		location: 'ShenZhen, China',
 	},
 	social: [
