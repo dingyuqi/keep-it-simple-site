@@ -3,10 +3,12 @@ title: How to reduce inventory under high concurrency?
 tags:
   - Big Data
   - Middleware
+cover: /cover/stock.png
 permalink: /en/article/designing-inventory-deduction-systems-under-high-concurrency/
 createTime: 2025/03/19 15:56:13
 ---
 This is a common scenario in e-commerce. Currently, Internet giants have very mature solutions for it. I wrote this article just to give some of my own thoughts.
+<!-- more -->
 
 Suppose we now have a relational table for inventory: INVENTORY, and its structure is as follows:
 
