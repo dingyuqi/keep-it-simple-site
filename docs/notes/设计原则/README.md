@@ -111,5 +111,5 @@ if __name__ == "__main__":
   <LinkCard title="单一职责原则" href="/designModel/agkqzc4e/" />
   <LinkCard title="接口隔离原则" href="/designModel/m4watttg/" />
   <LinkCard title="依赖倒置原则" href="/designModel/hp4bylot/" />
-  <LinkCard title="组合复用原则" href="/article/vuqkixk6/" />
+  <LinkCard title="组合复用原则" href="/designModel/vuqkixk6/" />
 </CardGrid>
