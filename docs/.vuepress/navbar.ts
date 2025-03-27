@@ -26,6 +26,13 @@ export const enNavbar = defineNavbarConfig([
 	{ text: 'Home', link: '/en/', icon: 'flat-color-icons:home' },
 	{ text: 'Blog', link: '/en/blog/', icon: 'flat-color-icons:view-details' },
 	{
+		text: 'Series',
+		icon: 'flat-color-icons:view-details',
+		items: [
+			{ text: 'SOLID Principles', link: '/en/solid/', icon: 'flat-color-icons:command-line' },
+		]
+	},
+	{
 		text: 'More',
 		icon: 'icon-park:more-two',
 		items: [
