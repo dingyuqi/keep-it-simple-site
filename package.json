@@ -1,39 +1,39 @@
 {
-  "name": "keep-it-simple",
-  "type": "module",
-  "version": "1.0.0",
-  "description": "The goal is to explain computer knowledge in simple and easy-to-understand way.",
-  "packageManager": "pnpm@9.10.0",
-  "author": "dingyuqi <dingyq2023@gmail.com>",
-  "license": "MIT",
-  "engines": {
-    "node": "^18.20.0 || >=20.0.0"
-  },
-  "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
-    "docs:build": "vuepress build docs --clean-cache --clean-temp",
-    "docs:preview": "http-server docs/.vuepress/dist",
-    "vp-update": "vp-update"
-  },
-  "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.20",
-    "@vuepress/plugin-google-analytics": "2.0.0-rc.80",
-    "http-server": "^14.1.1",
-    "markmap-lib": "^0.18.11",
-    "markmap-toolbar": "^0.18.10",
-    "markmap-view": "^0.18.10",
-    "sass-embedded": "^1.86.0",
-    "typescript": "^5.8.2",
-    "vue": "^3.5.13",
-    "vuepress": "2.0.0-rc.20",
-    "vuepress-theme-plume": "1.0.0-rc.137"
-  },
-  "dependencies": {
-    "@iconify/json": "^2.2.320",
-    "@types/node": "^18.19.82",
-    "@vercel/analytics": "^1.5.0",
-    "sass": "^1.86.0",
-    "vercel": "^37.14.0"
-  }
+	"name": "keep-it-simple",
+	"type": "module",
+	"version": "1.0.0",
+	"description": "The goal is to explain computer knowledge in simple and easy-to-understand way.",
+	"packageManager": "pnpm@9.10.0",
+	"author": "dingyuqi <dingyq2023@gmail.com>",
+	"license": "MIT",
+	"engines": {
+		"node": "^18.20.0 || >=20.0.0"
+	},
+	"scripts": {
+		"docs:dev": "vuepress dev docs",
+		"docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
+		"docs:build": "vuepress build docs --clean-cache --clean-temp",
+		"docs:preview": "http-server docs/.vuepress/dist",
+		"vp-update": "vp-update"
+	},
+	"devDependencies": {
+		"@vuepress/bundler-vite": "2.0.0-rc.20",
+		"@vuepress/plugin-google-analytics": "2.0.0-rc.80",
+		"http-server": "^14.1.1",
+		"markmap-lib": "^0.18.11",
+		"markmap-toolbar": "^0.18.10",
+		"markmap-view": "^0.18.10",
+		"sass-embedded": "^1.86.1",
+		"typescript": "^5.8.2",
+		"vue": "^3.5.13",
+		"vuepress": "2.0.0-rc.20",
+		"vuepress-theme-plume": "1.0.0-rc.137"
+	},
+	"dependencies": {
+		"@iconify/json": "^2.2.322",
+		"@types/node": "^18.19.85",
+		"@vercel/analytics": "^1.5.0",
+		"sass": "^1.86.1",
+		"vercel": "^37.14.0"
+	}
 }
