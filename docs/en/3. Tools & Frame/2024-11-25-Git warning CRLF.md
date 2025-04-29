@@ -71,7 +71,7 @@ If you have written a lot of code and documents, what should you do if you want 
 
 Usually, our editor supports search and batch changes.
 
-I use VSCode :[devicon:vscode]:.
+I use VSCode ::devicon:vscode]:.
 
 1. Open the search function: `Ctrl + Shift + F`.
 
@@ -81,7 +81,7 @@ I use VSCode :[devicon:vscode]:.
 
 We can also set the default line break to `LF` in our own IDEA to ensure that the line breaks of newly created files are correct.
 
-Let's take VSCode :[devicon:vscode]: as an example:
+Let's take VSCode ::devicon:vscode]: as an example:
 
 1. Open `Preferences`.
 

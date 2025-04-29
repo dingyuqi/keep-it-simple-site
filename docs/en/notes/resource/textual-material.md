@@ -16,7 +16,7 @@ copyright: false
 ---
 I maintain a repository on GitHub for all the books and papers I used.
 
-::: tip After trying many text editors or resource management software, I found that VSCode :[devicon:vscode]: add GitHub :[devicon:github]: are the final solutions.
+::: tip After trying many text editors or resource management software, I found that VSCode ::devicon:vscode]: add GitHub ::devicon:github:: are the final solutions.
 :::
 
 <RepoCard repo="dingyuqi/textual-material" />
