@@ -8,8 +8,8 @@ import { inject } from '@vercel/analytics';
 inject();
 
 export default defineClientConfig({
-	enhance({ app }) {
-		app.component('RepoCard', RepoCard)
-		app.component('CustomComponent', CustomComponent)
-	},
+    enhance({ app }) {
+        app.component('RepoCard', RepoCard)
+        app.component('CustomComponent', CustomComponent)
+    },
 })
