@@ -91,7 +91,7 @@ In simple terms, betweenness centrality measures the node $v$ by the proportion 
 
 The following figure shows the steps to calculate the betweenness score.
 
-![Betweenness centrality calculation example](/illustration/betweenness-centrality-example.png =400x)
+![Betweenness centrality calculation example =400x](/illustration/betweenness-centrality-example.png)
 
 The calculation process for node D is as follows:
 | Shortest path node pairs through D | Total number of shortest paths between node pairs $p$ | Percentage of the number of shortest paths through D $\frac{p(u)}{p}$ |
