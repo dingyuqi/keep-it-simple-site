@@ -20,14 +20,16 @@ copyright: false
 
 ## 学习经历
 ### 东南大学 <Badge>2017 年 09 月 - 2021 年 06 月</Badge>
-2017 - 2021 年就读于[东南大学](https://www.seu.edu.cn/)，计算机科学与技术专业。
+::: flex between center
+2017 - 2021 年就读于[东南大学](https://www.seu.edu.cn/)，计算机科学与工程学院的**计算机科学与技术专业**。于 2021 年 06 月获得学士学位。
+
+![Southeast University =200x](/logo/seu.svg)
+:::
 
 <CardGrid>
 <LinkCard title="杨绍富" href="https://sfyangcs.github.io/"  icon="/avatar/ysf.jpg" description="实验室导师"/>
 <LinkCard title="分布式无人车队列仿射变换" href="/pdf/thesis.pdf"  icon=skill-icons:ros-dark description="本科阶段毕业论文"/>
 </CardGrid>
-
-![Southeast University =200x](/logo/seu.svg)
 
 ## 工作经历
 ### 深圳计算科学研究院 <Badge>2021 年 07 月 - 2025 年 06 月</Badge>

@@ -19,15 +19,17 @@ copyright: false
 </div>
 
 ## Education
-###  Southeast University 
-From 2017 to 2021, I studied at [Southeast University](https://www.seu.edu.cn/), majoring in Computer Science and Technology.
+###  Southeast University <Badge>September 2017 - June 2021</Badge>
+::: flex between center
+From 2017 to 2021, I studied at [Southeast University](https://www.seu.edu.cn/), majoring in Computer Science and Technology. Obtained a bachelor's degree in June 2021.
+
+![Southeast University =200x](/logo/seu.svg)
+:::
 
 <CardGrid>
 <LinkCard title="Shaofu Yang" href="https://sfyangcs.github.io/"  icon="/avatar/ysf.jpg" description="Advisor"/>
 <LinkCard title="Affine transformation of distributed unmanned vehicle platoon" href="/pdf/thesis.pdf"  icon=skill-icons:ros-dark description="Undergraduate thesis"/>
 </CardGrid>
-
-![Southeast University =200x](/logo/seu.svg)
 
 ## Work
 ### Shenzhen Institute of Computing Science <Badge>July 2021 - June 2025</Badge>
