@@ -27,11 +27,11 @@
     "typescript": "^5.8.3",
     "vue": "^3.5.17",
     "vuepress": "2.0.0-rc.24",
-    "vuepress-theme-plume": "1.0.0-rc.157"
+    "vuepress-theme-plume": "1.0.0-rc.158"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.359",
-    "@types/node": "^22.16.4",
+    "@iconify/json": "^2.2.360",
+    "@types/node": "^22.16.5",
     "@vercel/analytics": "^1.5.0",
     "less": "^4.4.0",
     "mermaid": "^11.9.0",
