@@ -30,8 +30,8 @@
     "vuepress-theme-plume": "1.0.0-rc.159"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.363",
-    "@types/node": "^22.16.5",
+    "@iconify/json": "^2.2.364",
+    "@types/node": "^22.17.0",
     "@vercel/analytics": "^1.5.0",
     "less": "^4.4.0",
     "mermaid": "^11.9.0",
