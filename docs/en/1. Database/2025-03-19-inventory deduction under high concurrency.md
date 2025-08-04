@@ -12,9 +12,11 @@ This is a common scenario in e-commerce. Currently, Internet giants have very ma
 
 Suppose we now have a relational table for inventory: INVENTORY, and its structure is as follows:
 
+::: table title="INVENTORY Table"
 | ID          | PRODUCT_ID                | STOCK             |
 | ----------- | ------------------------- | ----------------- |
 | Primary key | Product unique identifier | Inventory (units) |
+:::
 
 Obviously, the program's steps for inventory reduction for products should be:
 ::: steps

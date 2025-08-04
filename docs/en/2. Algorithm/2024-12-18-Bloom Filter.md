@@ -95,6 +95,7 @@ fmt.print("data already exist!")
 :::
 
 ## Performance Comparison
+::: table title="Memory usage: Bloom reduction 60% - 90% memory usage"
 | Input data size 0.01 | Bloom memory/CPU peak | Map memory/CPU peak | Memory savings |
 | --------------- | -------------------- | ------------------ | -------- |
 | 1w | 0.8MB | 1.18MB | 32.5% |
@@ -105,10 +106,9 @@ fmt.print("data already exist!")
 | 500w | 9.3MB | 191.4MB | 95% |
 | 1000w | 17.6MB | 382.5MB | 95% |
 | 5000w | 61.7MB | 1705.2MB | 96% |
-::: center
-Memory usage Bloom reduction 60% - 90% memory usage
 :::
 
+::: table title="Time consumption record of full insert & full query"
 | Input data volume 0.01 | Bloom query time | Map query time | Time increase |
 | -------------- | ------------------- | ----------------- | -------- |
 | 1w | 1+1=2ms | 508+508=1ms | 200% |
@@ -120,8 +120,6 @@ Memory usage Bloom reduction 60% - 90% memory usage
 | 1000w | 1.87+1.5=3.9s | 1.48+1.4=2.9s | 134% |
 | 3000w | 16.5s | 9.8s | 168% |
 | 5000w | 15+13=28s | 7.6+7.6=15.2s | 184% |
-::: center
-Time consumption record of full insert + full query
 :::
 
 <br /><br /><br />
