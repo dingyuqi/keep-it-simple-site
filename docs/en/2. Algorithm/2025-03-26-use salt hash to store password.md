@@ -2,7 +2,7 @@
 title: How to safely store user passwords in the backend? Add salt!
 cover: /cover/password.png
 tags:
-- Backend
+-   Backend
 permalink: /en/article/salt-hash-store-password/
 createTime: 2025/03/25 14:41:13
 ---
@@ -36,11 +36,11 @@ Salting means adding a randomly generated string to the password before hashing 
 When we verify the password, we take out the Salt of the current user from the database, concatenate it with the password entered by the current user, and calculate the hash value. Finally, compare it with the hash value stored in the database. If they are consistent, the password is correct.
 
 ## Summary
-- Do not save plain text passwords.
-- Simple hash values ​​of passwords are not recommended.
-- Password salting and hashing is a common method at present. A new random salt value needs to be generated for each save.
+-   Do not save plain text passwords.
+-   Simple hash values ​​of passwords are not recommended.
+-   Password salting and hashing is a common method at present. A new random salt value needs to be generated for each save.
 
-::: note Many systems have abandoned the account password login method and adopted SMS verification or third-party service login, such as WeChat login, Alipay login, etc. GitHub uses multi-factor authentication (MFA) login method.
+::: note Many systems have abandoned the account password login method and adopted SMS verification or third-party service login, such as WeChat login, Alipay login, etc. GitHub uses multi-factor authentication ( MFA ) login method.
 
 These login methods require users to hold the mobile phone reserved during registration or other credible platform accounts bound to log in, which improves security to a certain extent. Because logging in through these methods usually means that in addition to the account, you also need to obtain the user's mobile phone.
 :::

@@ -9,7 +9,7 @@ export const theme: Theme = plumeTheme({
 	contributors: {
 		mode: "block",
 	},
-	changelog: { maxCount: 10 },
+	changelog: { maxCount: 10},
 	copyright: "CC-BY-NC-ND-4.0",
 	footer: {
 		message: "Keep It Simple",

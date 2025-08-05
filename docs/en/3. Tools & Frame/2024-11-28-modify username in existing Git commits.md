@@ -1,21 +1,21 @@
 ---
 title: Modify usernames in existing Git commits in batches
 tags:
-  - Git
+  -   Git
 createTime: 2024/11/28 16:33:57
 permalink: /en/article/utvqql9z/
 ---
 For a long time, commits on GitHub were all made using work accounts, which caused confusion among committers in private repositories. I found a bash script in StackOverflow that can modify usernames in batches. I change it a bit and record it here.
 
 There are two steps to modify:
-1. Execute the modification script
-2. Synchronize local modifications to the Git server
+1.  Execute the modification script
+2.  Synchronize local modifications to the Git server
 
 ## Run the script
 ::: code-tabs
 @tab rewrite.sh
 ```bash
-#!/bin/sh
+# !/bin/sh
 
 git filter-branch -f --env-filter '
 OLD_EMAIL="your-old@email.com"
@@ -50,5 +50,5 @@ This command can view the modification status of the existing commit information
 <br /><br /><br />
 
 ::: info References for this article
-1. [How to sync local history after massive git history rewrite?](https://stackoverflow.com/questions/48267025/how-to-sync-local-history-after-massive-git-history-rewrite)
+1.  [How to sync local history after massive git history rewrite?](https://stackoverflow.com/questions/48267025/how-to-sync-local-history-after-massive-git-history-rewrite)
 :::

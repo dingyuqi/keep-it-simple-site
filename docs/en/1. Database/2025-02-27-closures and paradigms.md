@@ -1,7 +1,7 @@
 ---
 title: How to find database closure, candidate code and paradigm?
 tags:
-  - Big Data
+  -   Big Data
 permalink: /en/article/find-database-closure-candidate-and-paradigm/
 createTime: 2025/02/27 08:50:40
 ---
@@ -10,11 +10,11 @@ createTime: 2025/02/27 08:50:40
 :::
 
 ::: steps
-1. Let the attribute set that will eventually become the closure be $Y$, and initialize $Y$ to $X$.
+1.  Let the attribute set that will eventually become the closure be $Y$, and initialize $Y$ to $X$.
 
-2. Check each function dependency $A \rightarrow B$ in $F$. If all attributes in the attribute set $A$ are in $Y$, and some attributes in $B$ are not in $Y$, add them to $Y$.
+2.  Check each function dependency $A \rightarrow B$ in $F$. If all attributes in the attribute set $A$ are in $Y$, and some attributes in $B$ are not in $Y$, add them to $Y$.
 
-3. Repeat the second step until no attributes can be added to the attribute set $Y$.
+3.  Repeat the second step until no attributes can be added to the attribute set $Y$.
 
 The final $Y$ is $X^{+*}$.
 :::
@@ -24,43 +24,43 @@ The final $Y$ is $X^{+*}$.
 :::
 
 ::: steps
-1. Find all attributes that do not appear on the right side of $FD$ to form an attribute group $X$. $X$ must appear in any candidate key.
+1.  Find all attributes that do not appear on the right side of $FD$ to form an attribute group $X$. $X$ must appear in any candidate key.
 
-2. Calculate the closure of $X$.
+2.  Calculate the closure of $X$.
 
-3. If $X^+=U$, then $X$ is the only candidate key, otherwise continue to step 4.
+3.  If $X^+=U$, then $X$ is the only candidate key, otherwise continue to step 4.
 
-4. Calculate $Y=U-X^+$​.
+4.  Calculate $Y=U-X^+$​.
 
-5. For each subset $\alpha$ of $Y$, check whether $X \alpha$ is a candidate key (same method as 2,3).
+5.  For each subset $\alpha$ of $Y$, check whether $X \alpha$ is a candidate key ( same method as 2,3 ) .
 :::
 
 ::: details Calculation example
-Given $R(A,B,C,D,E,G)$, $F\{D \rightarrow G, CD \rightarrow E, E \rightarrow D, A \rightarrow B\}$.
+Given $R ( A,B,C,D,E,G )$, $F\{D \rightarrow G, CD \rightarrow E, E \rightarrow D, A \rightarrow B\}$.
 ::: steps
-1. Find all attributes that do not appear on the right side of $FD$ and form an attribute group $X$. $X$ must appear in any candidate code.
+1.  Find all attributes that do not appear on the right side of $FD$ and form an attribute group $X$. $X$ must appear in any candidate code.
 
 $X = AC$
 
-2. Calculate the closure of $X$
+2.  Calculate the closure of $X$
 
-$X^+ = (AC)^+=\{A,C,B\}$​
+$X^+ = ( AC )^+=\{A,C,B\}$​
 
-3. If $X^+=U$, then $X$ is the only candidate code, otherwise continue to step 4.
+3.  If $X^+=U$, then $X$ is the only candidate code, otherwise continue to step 4.
 
 Obviously, the current $X^+$ does not satisfy it, so continue.
 
-4. Calculate $Y=U-X^+$.
+4.  Calculate $Y=U-X^+$.
 
 $Y=\{D,E,G\}$​
 
-5. For each subset $\alpha$ of $Y$, see if $X \alpha$ is a candidate code (the method is the same as step 2 and step 3).
+5.  For each subset $\alpha$ of $Y$, see if $X \alpha$ is a candidate code ( the method is the same as step 2 and step 3 ) .
 
-$(ACD)^+=\{A,C,D,B,G,E\}$ :heavy_check_mark:
+$( ACD )^+=\{A,C,D,B,G,E\}$ : heavy_check_mark:
 
-$(ACE)^+=\{A,C,E,B,D,G\}$ :heavy_check_mark:
+$( ACE )^+=\{A,C,E,B,D,G\}$ : heavy_check_mark:
 
-$(ACG)^+=\{A,C,G,B\}$ :heavy_multiplication_x:
+$( ACG )^+=\{A,C,G,B\}$ : heavy_multiplication_x:
 
 **So the candidate keys are {ACD}, {ACE}.** The attributes included in any candidate key are called **primary attributes**.
 :::
@@ -71,9 +71,9 @@ $(ACG)^+=\{A,C,G,B\}$ :heavy_multiplication_x:
 :::
 
 :::: steps
-1. Find the intersection of the two decomposed tables (set as $R_1$ and $R_2$).
+1.  Find the intersection of the two decomposed tables ( set as $R_1$ and $R_2$ ) .
 
-2. Determine whether this intersection is a superkey of $R_1$ or $R_2$ 's supercode.
+2.  Determine whether this intersection is a superkey of $R_1$ or $R_2$ 's supercode.
 
 ::: note Supercode: A set of one or more attributes, the combination of which allows us to uniquely identify an entity in an entity set.
 :::

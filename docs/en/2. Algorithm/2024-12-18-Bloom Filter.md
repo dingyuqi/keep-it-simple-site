@@ -1,7 +1,7 @@
 ---
 title: How Bloom Filters work
 tags:
-  - Big Data
+  -   Big Data
 cover: /cover/how-bloom-filter-work.png
 createTime: 2024/12/18 09:33:00
 permalink: /en/article/bloom-filter/
@@ -14,55 +14,55 @@ The main use scenario of Bloom filter is to ==quickly determine whether an eleme
 
 ## Basic Principle
 Bloom filter is a probabilistic data structure with space advantage. The core is a super large bit array and hash function, which is used to answer the question of whether an element exists in a set, but there may be misjudgment-that is, an element is not in the set but is considered to be in the set.
-1. Given a hash space of length N bits.
-2. Select d hash functions, each of which maps a given element to [0, N-1], and set that position to 1.
-3. Use the d hash functions in 2 to calculate the d positions of the element to be judged, $a_1, a_2, \dots, a_d$.
-4. If one of the corresponding bits of $a_1, a_2, \dots, a_d$ is not 1, then the element is definitely not in the set.
-5. If the corresponding bits of $a_1, a_2, \dots, a_d$ are all 1, then the element may exist in the set.
+1.  Given a hash space of length N bits.
+2.  Select d hash functions, each of which maps a given element to [0, N-1], and set that position to 1.
+3.  Use the d hash functions in 2 to calculate the d positions of the element to be judged, $a_1, a_2, \dots, a_d$.
+4.  If one of the corresponding bits of $a_1, a_2, \dots, a_d$ is not 1, then the element is definitely not in the set.
+5.  If the corresponding bits of $a_1, a_2, \dots, a_d$ are all 1, then the element may exist in the set.
 
 ![Basic Principles of Bloom Filter](/illustration/bloom-filter.png)
 
 ## Parameters
 From the above, it can be seen that a Bloom filter should have at least the following parameters:
 
-1. The size of the hash space, denoted as $m$. In the above example, $m$ = 20 bits.
-2. The size of the element set, denoted as $n$. In the above example, $n$ = 2.
-3. The number of hash functions, denoted as $k$. In the above example, $k$ = 2.
-4. Because BF allows errors, an element may not be in the set but is mistakenly judged to be in the set. The probability of this mistake is called false positive, denoted as $\varepsilon$.
+1.  The size of the hash space, denoted as $m$. In the above example, $m$ = 20 bits.
+2.  The size of the element set, denoted as $n$. In the above example, $n$ = 2.
+3.  The number of hash functions, denoted as $k$. In the above example, $k$ = 2.
+4.  Because BF allows errors, an element may not be in the set but is mistakenly judged to be in the set. The probability of this mistake is called false positive, denoted as $\varepsilon$.
 
 When the error rate is the smallest, the relationship between the parameters is as follows:
 
 $$k = \frac{m}{n} \ln2$$
 
-$$m = - \frac{n \ln \epsilon}{(\ln 2)^2}$$
+$$m = - \frac{n \ln \epsilon}{( \ln 2 )^2}$$
 
 $$\frac{m}{n}=- \frac{\log_2 \epsilon}{\ln 2} \approx -1.44 \log_2 \epsilon$$
 
 ## How To Choose A Hash Function?
 From the perspective of probability calculation and speed, the hash function must meet the following requirements:
-1. Independent and uniformly distributed.
-2. Fast calculation speed.
+1.  Independent and uniformly distributed.
+2.  Fast calculation speed.
 
 ::: tip Here we recommend to learn about the murmur algorithm
 :::
 
 ## Advantages And Disadvantages
 ::: tip Advantages
-- High memory efficiency.
-- Fast query speed.
-- Parallel processing.
+-   High memory efficiency.
+-   Fast query speed.
+-   Parallel processing.
 :::
 
 ::: warning Disadvantages
-- There is a false positive rate. It mainly depends on the number of hash functions and the size of the bit array. A larger bit array can reduce the false positive rate, but it will increase memory consumption, so a trade-off is needed.
-- There is a hash conflict.
-- Deletion is not supported.
-- The original data cannot be obtained.
+-   There is a false positive rate. It mainly depends on the number of hash functions and the size of the bit array. A larger bit array can reduce the false positive rate, but it will increase memory consumption, so a trade-off is needed.
+-   There is a hash conflict.
+-   Deletion is not supported.
+-   The original data cannot be obtained.
 :::
 
 ## Application
-- Database prevents database penetration. Use BloomFilter to reduce disk searches for non-existent rows or columns. Avoiding costly disk searches will greatly improve the performance of database query operations.
-- Determine whether a user has read a video or article in a business scenario. For example, Douyin or Toutiao.
+-   Database prevents database penetration. Use BloomFilter to reduce disk searches for non-existent rows or columns. Avoiding costly disk searches will greatly improve the performance of database query operations.
+-   Determine whether a user has read a video or article in a business scenario. For example, Douyin or Toutiao.
 
 ## Demo
 In Go language, we can use the following package to easily implement a Bloom filter.
@@ -76,19 +76,19 @@ package main
 import (
 "fmt"
 "github.com/bits-and-blooms/bloom"
-)
+ )
 
-func main(){
-m, k := bloom.EstimateParameters(uint(len(md)), 0.001)
-filter := bloom.New(m, k)
+func main ( ) {
+m, k := bloom.EstimateParameters ( uint ( len ( md )) , 0.001 )
+filter := bloom.New ( m, k )
 for d := range md {
-if len(d) == 0 {
+if len ( d ) == 0 {
 continue
 }
-filter.Add([]byte(d))
+filter.Add ( []byte ( d ))
 }
-if filter.Test([]byte(d)) {
-fmt.print("data already exist!")
+if filter.Test ( []byte ( d )) {
+fmt.print ( "data already exist!" )
 }
 }
 ```
@@ -125,7 +125,7 @@ fmt.print("data already exist!")
 <br /><br /><br />
 
 ::: info References for this article
-1. [Bloom filter calculator (hur.st)](https://hur.st/bloomfilter/?n=0.01k&p=0.1&m=&k=)
-2. [Bloom Filters (jasondavies.com)](https://www.jasondavies.com/bloomfilter/)
-3. [Classic Paper Interpretation - Bloom Filter - Tencent Cloud Developer Community - Tencent Cloud (tencent.com)](https://cloud.tencent.com/developer/article/2255688)
+1.  [Bloom filter calculator ( hur.st )](https://hur.st/bloomfilter/?n=0.01k&p=0.1&m=&k=)
+2.  [Bloom Filters ( jasondavies.com )](https://www.jasondavies.com/bloomfilter/)
+3.  [Classic Paper Interpretation - Bloom Filter - Tencent Cloud Developer Community - Tencent Cloud ( tencent.com )](https://cloud.tencent.com/developer/article/2255688)
 :::

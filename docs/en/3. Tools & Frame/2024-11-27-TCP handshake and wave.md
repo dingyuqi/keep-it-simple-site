@@ -1,7 +1,7 @@
 ---
 title: In-depth understanding of 3-Way Handshake Connection and 4-Way Handshake Termination in TCP
 tags:
-  - Network
+  -   Network
 createTime: 2024/11/27 09:30:04
 permalink: /en/article/3y3tmv0x/
 ---
@@ -24,10 +24,10 @@ Refers to the sequence number of the data that is **expected** to be received ne
 ==Used to solve the problem of packet loss.==
 
 ### Control Bit
-- `ACK`: When it is 1, it means that the **Confirmation Response** field becomes valid.
-- `RST`: When it is 1, it means that **abnormality** occurs in the TCP connection and the connection must be disconnected.
-- `SYN`: When it is 1, it means that it is hoped to **establish a connection** and use the **sequence number** field as the initial value of the sequence number.
-- `FIN`: When it is 1, it means that it is hoped to **disconnect** and no data will be sent in the future.
+-   `ACK`: When it is 1, it means that the **Confirmation Response** field becomes valid.
+-   `RST`: When it is 1, it means that **abnormality** occurs in the TCP connection and the connection must be disconnected.
+-   `SYN`: When it is 1, it means that it is hoped to **establish a connection** and use the **sequence number** field as the initial value of the sequence number.
+-   `FIN`: When it is 1, it means that it is hoped to **disconnect** and no data will be sent in the future.
 
 ## 3-Way Handshake
 Let's take a look at the schematic diagram of the 3-Way Handshake:
@@ -36,57 +36,57 @@ Let's take a look at the schematic diagram of the 3-Way Handshake:
 
 ### Handshake Process
 ::: steps
-1. First handshake
+1.  First handshake
 
     When no connection is established, both the client and the server are in the `CLOSE` state. When the client wants to initiate a connection, it will send the first message to the server: **SYN message**. The format is as follows:
 
     ![TCP first handshake message](/illustration/tcp-first-handshake.png)
 
-    - The client will randomly initialize the sequence number: `client_isn` and use it as the sequence number.
-    - The `SYN` bit will be set to 1.
+    -   The client will randomly initialize the sequence number: `client_isn` and use it as the sequence number.
+    -   The `SYN` bit will be set to 1.
 
     After sending the message, the client will enter the **SYN-SENT** state.
 
-2. Second handshake
+2.  Second handshake
 
     After receiving the SYN message from the client, the server will respond and send: **SYN + ACK message**. The format is as follows:
 
     ![TCP Second handshake message](/illustration/tcp-second-handshake.png)
 
-    - The server will also randomly initialize the sequence number: `server_isn` and use it as the sequence number.
+    -   The server will also randomly initialize the sequence number: `server_isn` and use it as the sequence number.
 
-    - Confirm the response number: `client_isn` + 1.
-    - `SYN` and `ACK` position 1.
+    -   Confirm the response number: `client_isn` + 1.
+    -   `SYN` and `ACK` position 1.
 
     After sending this message, the server will enter the **SYN-RCVD** state.
 
-3. Third handshake
+3.  Third handshake
 
     After the client receives the response from the server, it needs to respond to the server with the last message: **ACK message**. The format is as follows:
 
     ![TCP third handshake message](/illustration/tcp-third-handshake.png)
 
-    - Confirm the response number: `server_isn` + 1.
-    - `ACK` position 1.
-    - This message will carry the data that the client needs to send.
+    -   Confirm the response number: `server_isn` + 1.
+    -   `ACK` position 1.
+    -   This message will carry the data that the client needs to send.
 
     After sending this message, the client will enter the **ESTABLISHED** state. The server will also enter the **ESTABLISHED** state after receiving the message.
 :::
 
 ### Why is it necessary to do three times?
-- Only 3-Way Handshake can prevent the initialization of historical duplicate connections (**main reason**).
-- Only 3-Way Handshake can synchronize the initial sequence numbers of both parties.
-- Only 3-Way Handshake can avoid resource waste.
+-   Only 3-Way Handshake can prevent the initialization of historical duplicate connections ( **main reason** ) .
+-   Only 3-Way Handshake can synchronize the initial sequence numbers of both parties.
+-   Only 3-Way Handshake can avoid resource waste.
 
 #### 1. Avoid duplication of historical connections
-[RFC 793](https://www.rfc-editor.org/rfc/rfc793) explains the use of 3-Way Handshake for TCP connections:
+ [RFC 793](https://www.rfc-editor.org/rfc/rfc793) explains the use of 3-Way Handshake for TCP connections:
 > The principle reason for the three-way handshacke is to prevent old duplicate connection initiations from causing confusion.
 >
 > The main reason for the 3-Way Handshake is to avoid initialization confusion caused by historical duplicate connections.
 
 Just reading this sentence may feel very abstract. But it doesn't matter. Let's look at the following example to understand what historical connections are, and how the 3-Way Handshake prevents confusion caused by historical connections.
 
-Let's consider the following scenario: The client first sends a message SYN (seq = 90), Then when no response was received, the server crashed and the SYN message was not received by the server due to network congestion. The client restarted and tried to establish a connection again, sending SYN (seq = 100).
+Let's consider the following scenario: The client first sends a message SYN ( seq = 90 ) , Then when no response was received, the server crashed and the SYN message was not received by the server due to network congestion. The client restarted and tried to establish a connection again, sending SYN ( seq = 100 ) .
 
 ::: warning
 The scenario here does not belong to SYN message retransmission. If the message retransmission is caused only by network congestion, the sequence numbers of the two SYNs are the same.
@@ -94,15 +94,15 @@ The scenario here does not belong to SYN message retransmission. If the message 
 
 ![TCP 3-Way Handshake to avoid historical connections](/illustration/tcp-avoid-old-duplicate-connection.png)
 
-It can be seen that the main problem caused by network congestion is that the old SYN message arrives at the server earlier than the new SYN message. If only two handshakes are used, then when the server responds to the old message (seq = 90), the server and the client have established a connection based on the synchronization sequence of seq = 90, and both parties enter the ESTABLISHED state at the same time.
+It can be seen that the main problem caused by network congestion is that the old SYN message arrives at the server earlier than the new SYN message. If only two handshakes are used, then when the server responds to the old message ( seq = 90 ) , the server and the client have established a connection based on the synchronization sequence of seq = 90, and both parties enter the ESTABLISHED state at the same time.
 
 But in the 3-Way Handshake, we can see that After receiving the old SYN message, the server responded with a SYN + ACK message. When the client receives the response message of ACK = 90 + 1, it can be found that it does not meet its expectations, so it sends a `RST` message to terminate the connection establishment before the connection is established.
 
 #### 2. Synchronize the sequence numbers of both parties
 Both parties in the TCP protocol communication must maintain a sequence number to ensure the reliable transmission of messages. The main functions are:
-- The receiver can remove duplicate data.
-- The receiver can reorganize the messages in order through the sequence number.
-- The sender can know which messages have been received through the sequence number in the ACK message.
+-   The receiver can remove duplicate data.
+-   The receiver can reorganize the messages in order through the sequence number.
+-   The sender can know which messages have been received through the sequence number in the ACK message.
 
 #### 3. Avoid resource waste
 In fact, this reason is the same as the first "avoid duplication of historical connections". If there are only two handshakes, the connection has been established when the old SYN message arrives at the server. Then when the new SYN message arrives, the server has to establish a connection again. This leads to the waste of resources by establishing an incorrect connection the first time, Moreover, the wrong connection may have generated data transmission, thus wasting network resources.
@@ -118,18 +118,18 @@ Actually, the handshake is four times, but the second and third times in the mid
 ![TCP 4-Way Handshake](/illustration/tcp-handwave-process.png)
 
 ::: steps
-1. First handshake
+1.  First handshake
 
     The client actively sends a **FIN message**, indicating that it will not send data anymore, and enters the **FIN_WAIT_1** state.
 
-2. Second handshake
+2.  Second handshake
 
     After receiving the FIN message, the server will reply with an **ACK message** for confirmation, and then the server enters the **CLOSE_WAIT** state.
 
-3. Third handshake
+3.  Third handshake
     ==If the application on the server has sent all the data==, The server will send a **FIN message** to indicate that it will no longer send data and enter the **LAST_ACK** state.
 
-4. The fourth handshake
+4.  The fourth handshake
 
     After receiving the FIN message from the server, the client will reply with an ACK confirmation message. After that, the client will enter the **TIME_WAIT** state. After receiving this ACK message, the server will enter the **CLOSE** state, and the client will enter the CLOSE state after ==waiting for 2MSL time== after sending the message.
 :::
@@ -149,5 +149,5 @@ The 4-Way Handshake include: the FIN message initiated by the client, the ACK me
 <br /><br /><br />
 
 ::: info References for this article
-1. [Xiaolin coding](https://xiaolincoding.com/interview/network.html)
+1.  [Xiaolin coding](https://xiaolincoding.com/interview/network.html)
 :::

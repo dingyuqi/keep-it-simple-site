@@ -12,23 +12,23 @@ contributors: false
 changelog: false
 copyright: false
 ---
-![](/back-ground/github-header-image.png)
+![] ( /back-ground/github-header-image.png )
 
 <div align=center>
   <img  src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=59c798&center=true&vCenter=true&random=false&width=280&lines=Welcome+to+my+blog">
 </div>
 
 ## Education
-###  Southeast University <Badge>September 2017 - June 2021</Badge>
+### Southeast University <Badge>September 2017 - June 2021</Badge>
 ::: flex between center
-From 2017 to 2021, I studied at [Southeast University](https://www.seu.edu.cn/), majoring in Computer Science and Technology. Obtained a bachelor's degree in June 2021.
+From 2017 to 2021, I studied at [Southeast University](https://www.seu.edu.cn/) , majoring in Computer Science and Technology. Obtained a bachelor's degree in June 2021.
 
 ![Southeast University =200x](/logo/seu.svg)
 :::
 
 <CardGrid>
 <LinkCard title="Shaofu Yang" href="https://sfyangcs.github.io/"  icon="/avatar/ysf.jpg" description="Advisor"/>
-<LinkCard title="Affine transformation of distributed unmanned vehicle platoon" href="/pdf/thesis.pdf"  icon=skill-icons:ros-dark description="Undergraduate thesis"/>
+<LinkCard title="Affine transformation of distributed unmanned vehicle platoon" href="/pdf/thesis.pdf"  icon=skill-icons: ros-dark description="Undergraduate thesis"/>
 </CardGrid>
 
 ## Work
@@ -44,7 +44,7 @@ Engaged in the system backend development work of ToB and ToG, and participated 
 <Badge>July 2021 - December 2023</Badge>
 Engaged in the development of big data graph data mining algorithms, the main development languages ​​are **Go** and **Python**.
 
-Mainly responsible for the new function iteration and daily maintenance of the [Fishing Fort Data Analysis System](https://www.sics.ac.cn/col8/index). The "Fishing Fort System" is a big data rule mining system based on graph data. The core of its mining algorithm is implemented by the relevant papers (DGFD, GAR, etc.) of the chief scientist of the institute: [Wenfei Fan](https://en.wikipedia.org/wiki/Wenfei_Fan).
+Mainly responsible for the new function iteration and daily maintenance of the [Fishing Fort Data Analysis System](https://www.sics.ac.cn/col8/index) . The "Fishing Fort System" is a big data rule mining system based on graph data. The core of its mining algorithm is implemented by the relevant papers ( DGFD, GAR, etc. ) of the chief scientist of the institute: [Wenfei Fan](https://en.wikipedia.org/wiki/Wenfei_Fan) .
 :::
 
 ### New Journey <Badge>July 2025 - Present</Badge>

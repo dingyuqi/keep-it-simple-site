@@ -1,21 +1,21 @@
 ---
 title: 批量修改 Git 已有 commit 中的 username
 tags:
-  - Git
+  -   Git
 createTime: 2024/07/10 15:51:04
 permalink: /article/b07w665w/
 ---
 之前很长一段时间 GitHub 上的提交都在使用工作账户，导致私人仓库中的提交者比较混乱。在 StackOverflow 里面找到了一个 bash 脚本可以批量修改 username，在这里记录一下。
 
 修改的步骤一共两步：
-1. 执行修改脚本。
-2. 将本地修改同步到Git服务器。
+1.  执行修改脚本。
+2.  将本地修改同步到 Git 服务器。
 
 ## 运行脚本
 ::: code-tabs
 @tab rewrite.sh
 ```bash
-#!/bin/sh
+# !/bin/sh
 
 git filter-branch -f --env-filter '
 OLD_EMAIL="your-old@email.com"
@@ -50,6 +50,6 @@ git log
 <br /><br /><br />
 
 ::: info 本文参考资料
-1. [Make a README](https://www.makeareadme.com/)
-2. [Create an Excellent GitHub Profile with Markdown](https://learn.adafruit.com/excellent-github-profile/overview)
+1.  [Make a README](https://www.makeareadme.com/)
+2.  [Create an Excellent GitHub Profile with Markdown](https://learn.adafruit.com/excellent-github-profile/overview)
 :::

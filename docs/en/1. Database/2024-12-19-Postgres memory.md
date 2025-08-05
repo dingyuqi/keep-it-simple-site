@@ -1,8 +1,8 @@
 ---
 title: How does Postgres manage memory? How to tune memory?
 tags:
-  - Performance
-  - Relational Database
+  -   Performance
+  -   Relational Database
 cover: /logo/postgresql-light.svg
 createTime: 2024/12/19 14:57:16
 permalink: /en/article/postgres-memory-management/
@@ -44,7 +44,7 @@ WAL is the abbreviation of Write Ahead Log, which is **Write Ahead Log**, and is
 Write Ahead Log records the modified operations to disk before modifying the data. The advantage is that when the actual data is updated later, it is not necessary to persist the data to the file in real time. If the machine crashes or the process exits abnormally in the middle, causing some dirty pages to not be refreshed to the file in time, after the database is restarted, the last part of the log can be read by re-executing the WAL log to restore the status.
 
 #### PgArch Archive Process
-WAL logs will be used in a circular manner, that is, the early WAL logs will be overwritten. The PgArch archive process will back up the WAL logs before they are overwritten. From After version 8.0, PostgreSQL uses PITR (Point-In-Time-Recovery) technology. That is, after a full backup of the database, this technology can be used to archive the WAL logs after the backup time point. The full backup of the database plus the subsequent WAL logs can be used to roll back the database to any time point after the full backup.
+WAL logs will be used in a circular manner, that is, the early WAL logs will be overwritten. The PgArch archive process will back up the WAL logs before they are overwritten. From After version 8.0, PostgreSQL uses PITR ( Point-In-Time-Recovery ) technology. That is, after a full backup of the database, this technology can be used to archive the WAL logs after the backup time point. The full backup of the database plus the subsequent WAL logs can be used to roll back the database to any time point after the full backup.
 
 #### AutoVaccum Automatic Cleanup Process
 In the PostgreSQL database, after the DELETE operation or other update operation on the table, the disk will not be released or updated immediately. Only a new row of data will be added, and the original data will be marked as "deleted". The old data will be deleted only when there are no concurrent transactions reading these old data.
@@ -56,8 +56,8 @@ This process mainly collects data statistics. The collected information is mainl
 
 ## PostgreSQL Memory Management
 Postgres memory is divided into two main categories:
-1. **Local storage space**: allocated by each backend process for its own use.
-2. **Shared storage space**: shared by all processes in the PostgreSQL service.
+1.  **Local storage space**: allocated by each backend process for its own use.
+2.  **Shared storage space**: shared by all processes in the PostgreSQL service.
 
 ![PostgreSQL internal process](/illustration/pg_process.png)
 
@@ -70,9 +70,9 @@ All subspaces are as follows:
 The executor uses this space to sort tuples by `ORDER BY` and `DISTINCT` operations. It also uses it through merge-join and hash-join. Operation to connect to the table.
 
 #### Maintenance_work_mem
-This parameter is used for some types of maintenance operations (VACUUM, REINDEX).
+This parameter is used for some types of maintenance operations ( VACUUM, REINDEX ) .
 
-`VACUUM` means to reclaim resources. Simply put, after executing the delete operation, we only mark the deleted records, but do not actually delete them physically, nor release space. Therefore, although these deleted records are deleted, other new records still cannot occupy their physical space. We call this space occupation HWM (high water mark).
+`VACUUM` means to reclaim resources. Simply put, after executing the delete operation, we only mark the deleted records, but do not actually delete them physically, nor release space. Therefore, although these deleted records are deleted, other new records still cannot occupy their physical space. We call this space occupation HWM ( high water mark ) .
 
 `REINDEX` rebuilds the index using the data stored in the index table, replacing the old copy of the index. The general reason is to recover from an index crash or to make index changes to take effect.
 
@@ -87,22 +87,22 @@ The shared memory space is allocated by the PostgreSQL server at startup. This s
 PostgreSQL Load the pages in the table and index from the persistent storage into the shared buffer pool, and then operate on them directly.
 
 #### WAL Buffer
-PostgreSQL supports the WAL (Write ahead log) mechanism to ensure that data is not lost after a server failure. WAL data is actually the transaction log in PostgreSQL, and the WAL buffer is the buffer area before the WAL data is written to the persistent storage.
+PostgreSQL supports the WAL ( Write ahead log ) mechanism to ensure that data is not lost after a server failure. WAL data is actually the transaction log in PostgreSQL, and the WAL buffer is the buffer area before the WAL data is written to the persistent storage.
 
 #### Commit Log
-The commit log (CLOG) saves the status of all transactions and is part of the concurrency control mechanism. The commit log is allocated to shared memory and used throughout the transaction processing process.
+The commit log ( CLOG ) saves the status of all transactions and is part of the concurrency control mechanism. The commit log is allocated to shared memory and used throughout the transaction processing process.
 
 PostgreSQL defines the following four transaction states:
-1. IN_PROGRESS
-2. COMMITTED
-3. ABORTED
-4. SUB-COMMITTED
+1.  IN_PROGRESS
+2.  COMMITTED
+3.  ABORTED
+4.  SUB-COMMITTED
 
 ## PostgreSQL Memory Tuning
 ### Shared_buffers
-This parameter specifies the amount of memory used for shared memory buffers. The shared_buffers parameter determines how much memory is dedicated to the server cache data, which is equivalent to the SGA in the Oracle database. The default value of shared_buffers is usually 128 megabytes (MB).
+This parameter specifies the amount of memory used for shared memory buffers. The shared_buffers parameter determines how much memory is dedicated to the server cache data, which is equivalent to the SGA in the Oracle database. The default value of shared_buffers is usually 128 megabytes ( MB ) .
 
-The default value for this parameter is very low because on some platforms (such as old Solaris versions and SGI), having a larger value requires invasive actions such as recompiling the kernel. Even on modern Linux systems, the kernel will not allow shared_buffers to be set to more than 32 MB without adjusting the kernel settings first.
+The default value for this parameter is very low because on some platforms ( such as old Solaris versions and SGI ) , having a larger value requires invasive actions such as recompiling the kernel. Even on modern Linux systems, the kernel will not allow shared_buffers to be set to more than 32 MB without adjusting the kernel settings first.
 
 This mechanism has changed in PostgreSQL 9.4 and later, so the kernel settings will not have to be adjusted.
 
@@ -113,9 +113,9 @@ If you have a dedicated DB server with 1 GB or more of RAM, a reasonable startin
 Default value shared_buffers = 128 MB. **Changes require restarting the PostgreSQL server.**
 
 ::: tip Tips for setting shared_buffers
-1. Under 2 GB of memory, set the value of shared_buffers to 20% of the total memory on the system.
-2. Under 32 GB of RAM, set the value of shared_buffers to 20% of the total memory on the system. For less than 32 GB of memory, set the value of shared_buffers to 25% of the total system memory.
-3. For more than 32 GB of memory, set the value of shared_buffers to 8 GB.
+1.  Under 2 GB of memory, set the value of shared_buffers to 20% of the total memory on the system.
+2.  Under 32 GB of RAM, set the value of shared_buffers to 20% of the total memory on the system. For less than 32 GB of memory, set the value of shared_buffers to 25% of the total system memory.
+3.  For more than 32 GB of memory, set the value of shared_buffers to 8 GB.
 :::
 
 ### Work_mem
@@ -133,10 +133,10 @@ If there are M concurrent processes, each process has N HASH operations, the mem
 
 The default value is work_mem = 4 MB.
 
-:::tip Tips for setting work_mem
-1. Start with a low value: 32-64 MB.
-2. Then look for "temporary files" in the log line.
-3. Set to 2-3 times the maximum temporary file size.
+::: tip Tips for setting work_mem
+1.  Start with a low value: 32-64 MB.
+2.  Then look for "temporary files" in the log line.
+3.  Set to 2-3 times the maximum temporary file size.
 :::
 
 ### Maintenance_work_mem
@@ -149,8 +149,8 @@ It is important to remember that when autovacuum is running, up to autovacuum_ma
 The default value of maintenance_work_mem is 64 MB.
 
 ::: tip Tips for setting maintenance_work_mem
-1. Set 10% of system memory, up to 1 GB.
-2. If you have vacuuming problems, you may want to set it higher.
+1.  Set 10% of system memory, up to 1 GB.
+2.  If you have vacuuming problems, you may want to set it higher.
 :::
 
 ### Effective_cache_size
@@ -158,10 +158,10 @@ The effecve_cache_size should be set to an estimate of the memory available to t
 
 The PostgreSQL query planner uses this value to determine whether the plans it is considering will fit in RAM. If it is set too low, indexes may not be used to execute queries in the way you expect. Since most Unix systems are fairly aggressive at caching, at least 50% of the available RAM on a dedicated database server will be filled with cached data.
 
-:::tip Tips for setting effecve_cache_size
-1. Set this value to the amount of file system cache available.
-2. If you don't know, you can set this value to 50% of the total system memory.
-3. The default value is effecve_cache_size = 4 GB.
+::: tip Tips for setting effecve_cache_size
+1.  Set this value to the amount of file system cache available.
+2.  If you don't know, you can set this value to 50% of the total system memory.
+3.  The default value is effecve_cache_size = 4 GB.
 :::
 
 ### Temp_buffers
@@ -173,7 +173,7 @@ The default value is temp_buffer = 8 MB.
 
 ### How To View Each Configuration
 ::: steps
-1. First enter Postgres and use the following command to view the location of the conf file:
+1.  First enter Postgres and use the following command to view the location of the conf file:
 
     ```shell
     SELECT name,setting FROM pg_settings WHERE category='File Locations';
@@ -186,20 +186,20 @@ The default value is temp_buffer = 8 MB.
     ident_file | /usr/local/pgsql/data/pg_ident.conf
     ```
 
-2. View `postgresql.conf` and `postgresql.auto.conf`
+2.  View `postgresql.conf` and `postgresql.auto.conf`
 
     This configuration file mainly contains some common settings and is considered the most important configuration file. However, starting from version 9.4, postgresql introduced a new configuration file `postgresql.auto.conf`. When the same configuration exists, the system executes the `auto.conf` file first.
 
     In other words, ==`auto.conf` configuration file has higher priority than `conf` file== . It is worth noting that the `auto.conf` file must be modified using the `alter system` command in `psql`, while `conf` can be modified directly in a text editor.
 
-3. Modify parameters as required
+3.  Modify parameters as required
 
     ```sql
     alter system set shared_buffers=131072;
     alter system set max_worker_processes=104;
     ```
 
-4. Restart PosgreSQL
+4.  Restart PosgreSQL
 :::
 
 ### Performance Monitoring Tool
@@ -233,8 +233,8 @@ However, you can adjust the corresponding parameters according to the characteri
 <br /><br /><br />
 
 ::: info References for this article
-1. [architecture-and-tuning-memory-postgresql-databases](https://severalnines.com/blog/architecture-and-tuning-memory-postgresql-databases)
-2. [postgresql-out-of-memory](https://italux.medium.com/postgresql-out-of-memory-3fc1105446d)
-3. [Tuning Your PostgreSQL Server](https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server)
-4. ["How to practice PostgreSQL"](https://book.douban.com/subject/35224053/)
+1.  [architecture-and-tuning-memory-postgresql-databases](https://severalnines.com/blog/architecture-and-tuning-memory-postgresql-databases)
+2.  [postgresql-out-of-memory](https://italux.medium.com/postgresql-out-of-memory-3fc1105446d)
+3.  [Tuning Your PostgreSQL Server](https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server)
+4.  ["How to practice PostgreSQL"](https://book.douban.com/subject/35224053/)
 :::

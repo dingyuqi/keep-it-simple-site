@@ -2,8 +2,8 @@
 title: What is a Consistent Hash Algorithm?
 cover: /illustration/hash-ring-data-server-map.png
 tags:
-  - Big Data
-  - Distributed
+  -   Big Data
+  -   Distributed
 createTime: 2024/11/26 10:18:51
 permalink: /en/article/s1n21jo1/
 ---
@@ -15,9 +15,9 @@ In fact, we proposed the concept of Consistent Hash to solve the problem in dist
 ## What does hash inconsistency mean?
 Let's consider a distributed storage scenario:
 
-Now we need to store 10 data $D_1, D_2, \dots, D_{10}$ in 3 machine nodes ($M_0, M_1, M_2$). We can certainly use a mapping table to maintain the mapping relationship between data and machines, but that means we need to store an additional table and have to maintain it constantly. Even this table may not be able to store as the data increases. Then we naturally think of using a Hash function to calculate the mapping between data and machine nodes, so we have the following formula:
+Now we need to store 10 data $D_1, D_2, \dots, D_{10}$ in 3 machine nodes ( $M_0, M_1, M_2$ ) . We can certainly use a mapping table to maintain the mapping relationship between data and machines, but that means we need to store an additional table and have to maintain it constantly. Even this table may not be able to store as the data increases. Then we naturally think of using a Hash function to calculate the mapping between data and machine nodes, so we have the following formula:
 $$
-m = hash(o) \ \ mod \ \ n
+m = hash ( o ) \ \ mod \ \ n
 $$
 Where $o$ is the name of the data object, $n$ is the number of machines, and $m$ is the machine node number where the storage object is calculated.
 
@@ -44,31 +44,31 @@ So the consistency of Hash does not mean that the results of repeated calculatio
 
 ## Consistent Hash usage scenarios
 The Consistent Hash algorithm is a very important algorithm in distributed systems, mainly used in:
-- Load balancing
-- Cache data partitioning
-- Distributed relational database node mapping
-- RPC framework Duddo is used to select service providers
+-   Load balancing
+-   Cache data partitioning
+-   Distributed relational database node mapping
+-   RPC framework Duddo is used to select service providers
 
 ## Algorithm implementation
 The entire algorithm mainly transfers the hash value space to a ring-shaped virtual space, and then maps the machine nodes and data. Let's take a look at the implementation process based on the example of data and machine node mapping mentioned above:
 
 ::: steps
-1. Create a hash ring
+1.  Create a hash ring
 Unlike general hash functions that map data to a linear space, we consider mapping the hash value space into a virtual ring space. If the value of the entire hash space is: $0 \sim 2^{32}-1$, then we arrange it clockwise so that the last node $2^{32}-1$ overlaps at the starting position 0.
 
 ![Ring Hash Space](/illustration/hash-ring.png)
 
-2. Map data to the Hash ring
+2.  Map data to the Hash ring
 Assume that there are 4 data objects $o_1, o_2, o_3, o_4$, calculate the Hash value for each of them, and get the result $m_1, m_2, m_3, m_4$. Place these four results on the Hash ring.
 
 ![Data objects mapped to the Hash ring](/illustration/hash-ring-data.png)
 
-3. Map the server to the Hash ring
+3.  Map the server to the Hash ring
 Perform Hash calculation on the IP addresses of the 3 servers $c_1, c_2, c_3$, and perform $2^{32}$ modulo on the Hash value to get an integer $t_1, t_2, t_3$ with a value between $0 \sim 2^{32}-1$. Map the integer after modulo on the Hash ring.
 
 ![Mapping machine nodes to the Hash ring](/illustration/hash-ring-server.png)
 
-4. Selecting machine nodes for data storage
+4.  Selecting machine nodes for data storage
 Each data object selects the machine closest to it in a clockwise direction for storage.
 
 ![Data object selects machine node](/illustration/hash-ring-data-server-map.png)
@@ -93,7 +93,7 @@ Similarly, if we reduce a machine $c_1$, after reallocating the machines, we fin
 
 ==Load imbalance==
 
-This is a problem that consistent hashing can easily encounter. Generally speaking, we hope that data is evenly distributed on all machines, including after adding or removing machines. But observing the example of [adding nodes](/article/vpa4ql0t/#Adding machine nodes) mentioned earlier, after adding machine $c_4$, it only shares the pressure of $c_2$. We can imagine that if we add node $c_5$ again, unfortunately the hash value of the new node falls between $t_4$ and $t_2$ again, Then the newly added nodes cannot be assigned any data. **It can be seen that adding machine nodes may not necessarily reduce the pressure of data load.**
+This is a problem that consistent hashing can easily encounter. Generally speaking, we hope that data is evenly distributed on all machines, including after adding or removing machines. But observing the example of [adding nodes] ( /article/vpa4ql0t/#Adding machine nodes ) mentioned earlier, after adding machine $c_4$, it only shares the pressure of $c_2$. We can imagine that if we add node $c_5$ again, unfortunately the hash value of the new node falls between $t_4$ and $t_2$ again, Then the newly added nodes cannot be assigned any data. **It can be seen that adding machine nodes may not necessarily reduce the pressure of data load.**
 
 So how to solve it?
 
