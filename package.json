@@ -27,14 +27,14 @@
     "typescript": "^5.9.2",
     "vue": "^3.5.18",
     "vuepress": "2.0.0-rc.24",
-    "vuepress-theme-plume": "1.0.0-rc.160"
+    "vuepress-theme-plume": "1.0.0-rc.161"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.375",
+    "@iconify/json": "^2.2.376",
     "@types/node": "^22.17.2",
     "@vercel/analytics": "^1.5.0",
-    "less": "^4.4.0",
-    "mermaid": "^11.9.0",
+    "less": "^4.4.1",
+    "mermaid": "^11.10.0",
     "sass": "^1.90.0",
     "vercel": "^41.7.8"
   }
