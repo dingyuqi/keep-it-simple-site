@@ -2,7 +2,6 @@
 title: 关于我
 createTime: 2024/09/20 14:35:15
 permalink: /about-me/
-draft: true
 externalLinkIcon: false
 aside: false
 readingTime: false
@@ -11,8 +10,9 @@ editLink: false
 contributors: false
 changelog: false
 copyright: false
+article: false
 ---
-![] ( /back-ground/github-header-image.png )
+![](/back-ground/github-header-image.png)
 
 <div align=center>
   <img  src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=59c798&center=true&vCenter=true&random=false&width=280&lines=Welcome+to+my+blog">
