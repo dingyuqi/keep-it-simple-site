@@ -1,7 +1,7 @@
 ---
 title: Site Resource
 permalink: /en/resource/
-draft: true
+article: false
 externalLinkIcon: false
 aside: false
 readingTime: false

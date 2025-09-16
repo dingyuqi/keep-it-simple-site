@@ -3,7 +3,7 @@ title: Textual Material
 permalink: /en/resource/textual-material/
 createTime: 2024/12/16 14:31:30
 icon: cil:text-size
-draft: true
+article: false
 externalLinkIcon: false
 aside: false
 readingTime: false

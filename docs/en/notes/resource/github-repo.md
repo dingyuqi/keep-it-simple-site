@@ -2,7 +2,7 @@
 title: GitHub Repo
 permalink: /en/resource/github-repo/
 icon: octicon:mark-github-24
-draft: true
+article: false
 externalLinkIcon: false
 aside: false
 readingTime: false

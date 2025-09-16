@@ -1,7 +1,7 @@
 ---
 title: 网站资源
 permalink: /resource/
-draft: true
+article: false
 externalLinkIcon: false
 aside: false
 readingTime: false

@@ -1,7 +1,7 @@
 ---
 title: SOLID Principles
 permalink: /en/solid/
-draft: true
+article: false
 externalLinkIcon: false
 aside: false
 readingTime: false
