@@ -26,8 +26,8 @@ Here I will share some useful and interesting GitHub Repos, as well as some usef
 
 ## Websites
 <CardGrid>
-  <LinkCard icon="fluent-emoji-flat: zany-face" title="Complete list of github markdown emoji markup" href="https://gist.github.com/rxaviers/7360908" description="Provides a full set of GitHub Emoji and their syntax."/>
-  <LinkCard icon="flat-color-icons: portrait-mode" title="Generate an image of contributors to keep your README.md in sync" href="https://contrib.rocks/preview?repo=angular%2Fangular-ja" description="Quickly generate avatar images of all contributors of a specified GitHub Repo."/>
+  <LinkCard icon="fluent-emoji-flat:zany-face" title="Complete list of github markdown emoji markup" href="https://gist.github.com/rxaviers/7360908" description="Provides a full set of GitHub Emoji and their syntax."/>
+  <LinkCard icon="flat-color-icons:portrait-mode" title="Generate an image of contributors to keep your README.md in sync" href="https://contrib.rocks/preview?repo=angular%2Fangular-ja" description="Quickly generate avatar images of all contributors of a specified GitHub Repo."/>
   <LinkCard icon="unjs: theme-colors" title="Schemecolor" href="https://www.schemecolor.com/" description="Color palette generator website."/>
-  <LinkCard icon="vscode-icons: file-type-image" title="PicProse" href="https://picprose.pixpark.net/zh" description="Quickly generate blog covers with customizable images and titles."/>
+  <LinkCard icon="vscode-icons:file-type-image" title="PicProse" href="https://picprose.pixpark.net/zh" description="Quickly generate blog covers with customizable images and titles."/>
 </CardGrid>

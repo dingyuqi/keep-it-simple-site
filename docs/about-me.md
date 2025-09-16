@@ -28,7 +28,7 @@ article: false
 
 <CardGrid>
 <LinkCard title="杨绍富" href="https://sfyangcs.github.io/"  icon="/avatar/ysf.jpg" description="实验室导师"/>
-<LinkCard title="分布式无人车队列仿射变换" href="/pdf/thesis.pdf"  icon=skill-icons: ros-dark description="本科阶段毕业论文"/>
+<LinkCard title="分布式无人车队列仿射变换" href="/pdf/thesis.pdf"  icon=skill-icons:ros-dark description="本科阶段毕业论文"/>
 </CardGrid>
 
 ## 工作经历
