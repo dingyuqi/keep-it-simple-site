@@ -22,6 +22,7 @@ createTime: 2025/02/18 17:03:14
 <CardGrid>
   <RepoCard repo="leviarista/github-profile-header-generator" />
   <RepoCard repo="LelouchFR/skill-icons" />
+  <RepoCard repo="https://github.com/vinta/pangu.js" />
 </CardGrid>
 
 ## Websites
