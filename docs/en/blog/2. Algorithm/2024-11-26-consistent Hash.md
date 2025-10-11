@@ -93,7 +93,7 @@ Similarly, if we reduce a machine $c_1$, after reallocating the machines, we fin
 
 ==Load imbalance==
 
-This is a problem that consistent hashing can easily encounter. Generally speaking, we hope that data is evenly distributed on all machines, including after adding or removing machines. But observing the example of [adding nodes] ( /article/vpa4ql0t/#Adding machine nodes ) mentioned earlier, after adding machine $c_4$, it only shares the pressure of $c_2$. We can imagine that if we add node $c_5$ again, unfortunately the hash value of the new node falls between $t_4$ and $t_2$ again, Then the newly added nodes cannot be assigned any data. **It can be seen that adding machine nodes may not necessarily reduce the pressure of data load.**
+This is a problem that consistent hashing can easily encounter. Generally speaking, we hope that data is evenly distributed on all machines, including after adding or removing machines. But observing the example of [adding nodes](/article/vpa4ql0t/#Adding machine nodes ) mentioned earlier, after adding machine $c_4$, it only shares the pressure of $c_2$. We can imagine that if we add node $c_5$ again, unfortunately the hash value of the new node falls between $t_4$ and $t_2$ again, Then the newly added nodes cannot be assigned any data. **It can be seen that adding machine nodes may not necessarily reduce the pressure of data load.**
 
 So how to solve it?
 
