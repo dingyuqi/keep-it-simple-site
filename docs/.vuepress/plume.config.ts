@@ -1,6 +1,6 @@
 import { defineThemeConfig } from 'vuepress-theme-plume'
 import { enNavbar, zhNavbar } from './navbar'
-import { enNotes, zhNotes } from './notes'
+import { enCollections, zhCollections } from './collections'
 
 /**
  * @see https://theme-plume.vuejs.press/config/basic/
@@ -21,15 +21,24 @@ export default defineThemeConfig({
             link: 'mailto:dingyq2023@gmail.com'
         },
     ],
-
+    footer: {
+        message: "Keep It Simple",
+        copyright: "Copyright © 2021-present dingyuqi. All rights reserved.",
+    },
     locales: {
         '/': {
             navbar: zhNavbar,
-            notes: zhNotes,
+            collections: [
+                ...zhCollections
+            ],
         },
         '/en/': {
             navbar: enNavbar,
-            notes: enNotes,
+            collections: [
+                ...enCollections,
+            ]
+
         },
     },
+
 })
