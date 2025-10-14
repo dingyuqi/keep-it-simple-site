@@ -147,9 +147,9 @@ Friends with the ability can go directly to the [ROS kinetic official website](h
 :::
 
 The algorithm for installing this camera is divided into the following main steps:
-1.  [Configure the environment] ( /article/2iezf70h/#Configure the environment )
-2.  [Install the SDK dependent environment] ( /article/2iezf70h/#Install the SDK dependent environment )
-3.  [Install the SDK] ( /article/2iezf70h/#Install the SDK )
+1.  [Configure the environment](/article/2iezf70h/#Configure the environment)
+2.  [Install the SDK dependent environment](/article/2iezf70h/#Install the SDK dependent environment)
+3.  [Install the SDK](/article/2iezf70h/#Install the SDK)
 
 ### Configure The Environment
 #### Install Pangolin

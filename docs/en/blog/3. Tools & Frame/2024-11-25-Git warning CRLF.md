@@ -27,9 +27,9 @@ Git is aligned with Linux by default, and I use Windows development, which leads
 Obviously, the key to solving the problem lies in ==unifying the use of the two characters CR and LF==. After we unify the use of line breaks, if the PDF file is still damaged, it is because Git treats the PDF file as a general file and processes the line breaks. We just need to specify the pdf file as a binary file.
 
 The solution steps are mainly divided into three parts, but not all of the three parts need to be operated. You need to decide according to your own situation.
--   [Configure Git line break conversion strategy] ( /article/h19kugad/#Configure-git-line break conversion strategy )
--   [Change existing line breaks] ( /article/h19kugad/#Change existing line breaks )
--   [Specify pdf files as binary files] ( /article/h19kugad/#Specify-pdf-files as binary files )
+-   [Configure Git line break conversion strategy](/article/h19kugad/#Configure-git-line break conversion strategy)
+-   [Change existing line breaks](/article/h19kugad/#Change existing line breaks)
+-   [Specify pdf files as binary files](/article/h19kugad/#Specify-pdf-files as binary files)
 
 ### Configure Git line break conversion strategy
 There is a `core.autocrlf` configuration in Git configuration, which has three values: `true`, `false` and `input`.
