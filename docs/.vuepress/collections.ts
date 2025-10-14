@@ -18,14 +18,14 @@ export const enCollections = defineCollections([
         dir: "resource",
         title: "resource",
         sidebar: "auto",
-        linkPrefix: "/en/resource/",
+        linkPrefix: "/resource/",
     },
     {
         type: "doc",
         dir: "solid",
         title: "solid",
         sidebar: "auto",
-        linkPrefix: "/en/solid/",
+        linkPrefix: "/solid/",
     },
 ])
 
