@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "description": "The goal is to explain computer knowledge in simple and easy-to-understand way.",
-  "packageManager": "pnpm@10.17.1+sha512.17c560fca4867ae9473a3899ad84a88334914f379be46d455cbf92e5cf4b39d34985d452d2583baf19967fa76cb5c17bc9e245529d0b98745721aa7200ecaf7a",
+  "packageManager": "pnpm@10.18.3+sha512.bbd16e6d7286fd7e01f6b3c0b3c932cda2965c06a908328f74663f10a9aea51f1129eea615134bf992831b009eabe167ecb7008b597f40ff9bc75946aadfb08d",
   "author": "dingyuqi <dingyq2023@gmail.com>",
   "license": "MIT",
   "engines": {
@@ -17,8 +17,8 @@
     "vp-update": "vp-update"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.24",
-    "@vuepress/plugin-google-analytics": "2.0.0-rc.112",
+    "@vuepress/bundler-vite": "2.0.0-rc.26",
+    "@vuepress/plugin-google-analytics": "2.0.0-rc.114",
     "http-server": "^14.1.1",
     "markmap-lib": "^0.18.12",
     "markmap-toolbar": "^0.18.12",
@@ -26,8 +26,8 @@
     "sass-embedded": "^1.93.2",
     "typescript": "^5.9.3",
     "vue": "^3.5.22",
-    "vuepress": "2.0.0-rc.24",
-    "vuepress-theme-plume": "1.0.0-rc.171"
+    "vuepress": "2.0.0-rc.26",
+    "vuepress-theme-plume": "1.0.0-rc.172"
   },
   "dependencies": {
     "@iconify/json": "^2.2.395",

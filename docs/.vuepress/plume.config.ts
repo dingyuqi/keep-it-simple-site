@@ -25,6 +25,7 @@ export default defineThemeConfig({
         message: "Keep It Simple",
         copyright: "Copyright © 2021-present dingyuqi. All rights reserved.",
     },
+    transition: { appearance: 'circle-clip' },
     locales: {
         '/': {
             navbar: zhNavbar,
