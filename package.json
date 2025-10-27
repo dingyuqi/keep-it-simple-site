@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "description": "The goal is to explain computer knowledge in simple and easy-to-understand way.",
-  "packageManager": "pnpm@10.18.3+sha512.bbd16e6d7286fd7e01f6b3c0b3c932cda2965c06a908328f74663f10a9aea51f1129eea615134bf992831b009eabe167ecb7008b597f40ff9bc75946aadfb08d",
+  "packageManager": "pnpm@10.19.0+sha512.c9fc7236e92adf5c8af42fd5bf1612df99c2ceb62f27047032f4720b33f8eacdde311865e91c411f2774f618d82f320808ecb51718bfa82c060c4ba7c76a32b8",
   "author": "dingyuqi <dingyq2023@gmail.com>",
   "license": "MIT",
   "engines": {
@@ -27,12 +27,13 @@
     "typescript": "^5.9.3",
     "vue": "^3.5.22",
     "vuepress": "2.0.0-rc.26",
-    "vuepress-theme-plume": "1.0.0-rc.173"
+    "vuepress-theme-plume": "1.0.0-rc.174"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.397",
-    "@types/node": "^22.18.11",
+    "@iconify/json": "^2.2.400",
+    "@types/node": "^22.18.12",
     "@vercel/analytics": "^1.5.0",
+    "@vueuse/core": "^13.9.0",
     "less": "^4.4.2",
     "mermaid": "^11.12.0",
     "sass": "^1.93.2",
