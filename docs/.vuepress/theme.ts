@@ -51,6 +51,7 @@ export const theme: Theme = plumeTheme({
 			align: "center",
 			maxContent: true,
 			copy: true,
+			fullWidth: true,
 		},
 	},
 	comment: {

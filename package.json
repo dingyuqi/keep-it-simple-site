@@ -18,25 +18,25 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.26",
-    "@vuepress/plugin-google-analytics": "2.0.0-rc.114",
+    "@vuepress/plugin-google-analytics": "2.0.0-rc.118",
     "http-server": "^14.1.1",
     "markmap-lib": "^0.18.12",
     "markmap-toolbar": "^0.18.12",
     "markmap-view": "^0.18.12",
-    "sass-embedded": "^1.93.2",
+    "sass-embedded": "^1.93.3",
     "typescript": "^5.9.3",
     "vue": "^3.5.22",
     "vuepress": "2.0.0-rc.26",
-    "vuepress-theme-plume": "1.0.0-rc.174"
+    "vuepress-theme-plume": "1.0.0-rc.175"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.400",
-    "@types/node": "^22.18.12",
+    "@iconify/json": "^2.2.402",
+    "@types/node": "^22.19.0",
     "@vercel/analytics": "^1.5.0",
     "@vueuse/core": "^13.9.0",
     "less": "^4.4.2",
-    "mermaid": "^11.12.0",
-    "sass": "^1.93.2",
+    "mermaid": "^11.12.1",
+    "sass": "^1.93.3",
     "vercel": "^41.7.8"
   }
 }
