@@ -32,23 +32,11 @@ From 2017 to 2021, I studied at [Southeast University](https://www.seu.edu.cn/) 
 </CardGrid>
 
 ## Work
-### Shenzhen Institute of Computing Science <Badge>July 2021 - June 2025</Badge>
-
-::: tabs
-@tab Backend Engineer
-
-<Badge>December 2023 - June 2025</Badge>
-Engaged in the system backend development work of ToB and ToG, and participated in the delivery of multiple projects. The main development languages ​​are **Go** and **Python**.
-
-@tab Algorithm Engineer
-<Badge>July 2021 - December 2023</Badge>
-Engaged in the development of big data graph data mining algorithms, the main development languages ​​are **Go** and **Python**.
-
-Mainly responsible for the new function iteration and daily maintenance of the [Fishing Fort Data Analysis System](https://www.sics.ac.cn/col8/index) . The "Fishing Fort System" is a big data rule mining system based on graph data. The core of its mining algorithm is implemented by the relevant papers ( DGFD, GAR, etc. ) of the chief scientist of the institute: [Wenfei Fan](https://en.wikipedia.org/wiki/Wenfei_Fan) .
-:::
-
 ### New Journey <Badge>July 2025 - Present</Badge>
 After a one-month break, I have started a new job. Updates about this experience will be shared once I've settled into the position.
+
+### Shenzhen Institute of Computing Science <Badge>July 2021 - June 2025</Badge>
+Backend Engineer and Algorithm Engineer. The main development languages ​​are **Go** and **Python**.
 
 ## Certificate
 <LinkCard title="Systems Analyst" href="/pdf/certificate.pdf" target="_blank" icon="/icon/ruankao.png">

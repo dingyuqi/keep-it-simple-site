@@ -32,21 +32,12 @@ article: false
 </CardGrid>
 
 ## 工作经历
-### 深圳计算科学研究院 <Badge>2021 年 07 月 - 2025 年 06 月</Badge>
-::: tabs
-@tab 后端工程师
-<Badge>2023 年 12 月 - 2025 年 06 月</Badge>
-从事 ToB 端的系统后端开发工作，参与多个项目的交付工作。主要开发语言为 **Go** 和 **Python**。
-
-@tab 算法工程师
-<Badge>2021 年 07 月 - 2023 年 12 月</Badge>
-从事大数据图数据挖掘算法的开发工作，主要开发语言为 **Go** 和 **Python**。
-
-主要负责 [钓鱼城数据分析系统](https://www.sics.ac.cn/col8/index) 的新功能迭代以及日常维护。钓鱼城系统是一个基于图数据的数据挖掘系统。其挖掘算法核心实现的是本院首席科学家： [樊文飞院士](https://baike.baidu.com/item/%E6%A8%8A%E6%96%87%E9%A3%9E/11051353) 的相关论文 DGFD, GAR 等。
-:::
-
 ### 新的旅程 <Badge>2025 年 07 月 - 至今</Badge>
 在休息一个月后，开启了新的工作。等熟悉新工作后再更新内容。
+
+### 深圳计算科学研究院 <Badge>2021 年 07 月 - 2025 年 06 月</Badge>
+担任后端工程师和算法工程师，主要开发语言为 **Go** 和 **Python**。
+
 
 ## 证书
 <LinkCard title="系统分析师" href="/pdf/certificate.pdf" target="_blank" icon="/logo/ruankao.png">
