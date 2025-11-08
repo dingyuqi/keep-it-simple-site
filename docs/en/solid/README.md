@@ -16,7 +16,7 @@ createTime: 2025/03/27 16:17:51
 Design patterns are for the programming paradigm of object-oriented programming. So before learning design patterns, we must also understand what ==object-oriented programming== is. ​​Object-oriented programming is to extract different objects from the problem, and each object has its own properties and behaviors. The process of solving problems is completed by the interaction between objects through "behavior".
 
 ## What is the difference between object-oriented and process-oriented?
-Corresponding to **object-oriented programming ( OOP ) **, there is also **process-oriented programming ( POP ) **. These two programming paradigms represent two ideas of code organization. We will take the example of writing a small program for playing Gobang to see how two different ideas will organize the same function of playing chess.
+Corresponding to **object-oriented programming ( OOP )**, there is also **process-oriented programming ( POP )**. These two programming paradigms represent two ideas of code organization. We will take the example of writing a small program for playing Gobang to see how two different ideas will organize the same function of playing chess.
 
 ### Process Oriented ( POP )
 For the chess game, we divide it into several steps: displaying the chessboard, playing chess, and checking victory. The function of playing chess is achieved by continuously looping several functions.
