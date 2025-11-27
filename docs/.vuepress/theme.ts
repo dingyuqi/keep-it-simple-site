@@ -57,9 +57,8 @@ export const theme: Theme = plumeTheme({
 	comment: {
 		provider: "Giscus",
 		comment: true,
-		repo: "dingyuqi/blog-with-plume-theme",
-
-		categoryId: "DIC_kwDOM0ffQs4CkKcH",
+		repo: "dingyuqi/keep-it-simple-comment",
+		categoryId: "DIC_kwDOQbTT_84CyHDi",
 		category: "Announcements",
 		mapping: "title",
 		reactionsEnabled: true,
