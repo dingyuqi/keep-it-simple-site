@@ -74,22 +74,39 @@ In Go language, we can use the following package to easily implement a Bloom fil
 package main
 
 import (
-"fmt"
-"github.com/bits-and-blooms/bloom"
- )
+    "fmt"
+    "github.com/bits-and-blooms/bloom"
+)
 
-func main ( ) {
-m, k := bloom.EstimateParameters ( uint ( len ( md )) , 0.001 )
-filter := bloom.New ( m, k )
-for d := range md {
-if len ( d ) == 0 {
-continue
-}
-filter.Add ( []byte ( d ))
-}
-if filter.Test ( []byte ( d )) {
-fmt.print ( "data already exist!" )
-}
+func main() {
+    // Assuming 'md' is a slice of strings containing your data
+    // You need to define this variable. Example:
+    // md := []string{"apple", "banana", "cherry", "date", "elderberry"}
+
+    // You need to define 'md' variable first. Let me assume it's a slice of strings:
+    md := []string{"data1", "data2", "data3", "data4", ""} // Example with empty string
+
+    // Calculate optimal parameters for the bloom filter
+    // 1000 items expected with 0.1% false positive rate
+    m, k := bloom.EstimateParameters(uint(len(md)), 0.001)
+    filter := bloom.New(m, k)
+
+    // Add all elements from md to the bloom filter
+    for _, d := range md {
+        if len(d) == 0 {
+            continue
+        }
+        filter.Add([]byte(d))
+    }
+
+    // Test if a specific element exists
+    // You need to define what 'd' is for testing. Example:
+    testData := "data1"
+    if filter.Test([]byte(testData)) {
+        fmt.Println("data already exists!")
+    } else {
+        fmt.Printf("data '%s' not found\n", testData)
+    }
 }
 ```
 :::
