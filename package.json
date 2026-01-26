@@ -23,21 +23,21 @@
     "markmap-lib": "^0.18.12",
     "markmap-toolbar": "^0.18.12",
     "markmap-view": "^0.18.12",
-    "sass-embedded": "^1.97.2",
+    "sass-embedded": "^1.97.3",
     "typescript": "^5.9.3",
     "vue": "^3.5.27",
     "vuepress": "2.0.0-rc.26",
     "vuepress-theme-plume": "1.0.0-rc.187"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.430",
+    "@iconify/json": "^2.2.431",
     "@types/node": "^22.19.7",
     "@vercel/analytics": "^1.6.1",
     "@vueuse/core": "^13.9.0",
     "less": "^4.5.1",
     "mermaid": "^11.12.2",
     "react": "19.2.1",
-    "sass": "^1.97.2",
+    "sass": "^1.97.3",
     "vercel": "^41.7.8"
   }
 }
