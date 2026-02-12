@@ -25,13 +25,13 @@
     "markmap-view": "^0.18.12",
     "sass-embedded": "^1.97.3",
     "typescript": "^5.9.3",
-    "vue": "^3.5.27",
+    "vue": "^3.5.28",
     "vuepress": "2.0.0-rc.26",
     "vuepress-theme-plume": "1.0.0-rc.187"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.437",
-    "@types/node": "^22.19.10",
+    "@iconify/json": "^2.2.438",
+    "@types/node": "^22.19.11",
     "@vercel/analytics": "^1.6.1",
     "@vueuse/core": "^13.9.0",
     "less": "^4.5.1",
