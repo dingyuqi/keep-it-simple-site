@@ -457,4 +457,4 @@ ORB-SLAM: [https://github.com/INDEMINDtech/run.ORB](https://github.com/INDEMINDt
 :::
 
 ## Summary
-: tada: : tada: When you complete all the above steps, you should be able to get a real-time ORM-SLAM algorithm : tada: : tada:
+:tada: :tada: When you complete all the above steps, you should be able to get a real-time ORM-SLAM algorithm :tada: :tada:

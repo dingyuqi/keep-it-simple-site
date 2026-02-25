@@ -310,4 +310,8 @@ Can we train base models, Where the ability to understand and reliably execute g
 
 [^relation-figure]: Figure from Figure 2 in [DEEP REINFORCEMENT LEARNING](https://arxiv.org/pdf/1810.06339.pdf)
 
-[^model-category]: [Foundation Models 101: A step-by-step guide for beginners](https://www.scribbledata.io/foundation-models-101-a-step-by-step-guide-for-beginners/) [^model-training]: [What it Takes to Train a Foundation Model](https://www.nocode.ai/what-it-takes-to-train-a-foundation-model/) [^paper]: [On the Opportunities and Risks of Foundation Models ( 2021 )](https://arxiv.org/abs/2108.07258)
+[^model-category]: [Foundation Models 101: A step-by-step guide for beginners](https://www.scribbledata.io/foundation-models-101-a-step-by-step-guide-for-beginners/)
+
+[^model-training]: [What it Takes to Train a Foundation Model](https://www.nocode.ai/what-it-takes-to-train-a-foundation-model/)
+
+[^paper]: [On the Opportunities and Risks of Foundation Models ( 2021 )](https://arxiv.org/abs/2108.07258)
