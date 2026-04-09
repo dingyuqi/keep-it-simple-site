@@ -17,27 +17,27 @@
     "vp-update": "vp-update"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.26",
-    "@vuepress/plugin-google-analytics": "2.0.0-rc.126",
+    "@vuepress/bundler-vite": "2.0.0-rc.28",
+    "@vuepress/plugin-google-analytics": "2.0.0-rc.128",
     "http-server": "^14.1.1",
     "markmap-lib": "^0.18.12",
     "markmap-toolbar": "^0.18.12",
     "markmap-view": "^0.18.12",
-    "sass-embedded": "^1.98.0",
+    "sass-embedded": "^1.99.0",
     "typescript": "^5.9.3",
-    "vue": "^3.5.31",
-    "vuepress": "2.0.0-rc.26",
-    "vuepress-theme-plume": "1.0.0-rc.192"
+    "vue": "^3.5.32",
+    "vuepress": "2.0.0-rc.28",
+    "vuepress-theme-plume": "1.0.0-rc.193"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.456",
-    "@types/node": "^22.19.15",
+    "@iconify/json": "^2.2.460",
+    "@types/node": "^22.19.17",
     "@vercel/analytics": "^1.6.1",
     "@vueuse/core": "^13.9.0",
     "less": "^4.6.4",
-    "mermaid": "^11.13.0",
+    "mermaid": "^11.14.0",
     "react": "19.2.1",
-    "sass": "^1.98.0",
+    "sass": "^1.99.0",
     "vercel": "^41.7.8"
   }
 }
