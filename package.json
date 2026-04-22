@@ -25,12 +25,12 @@
     "markmap-view": "^0.18.12",
     "sass-embedded": "^1.99.0",
     "typescript": "^5.9.3",
-    "vue": "^3.5.32",
+    "vue": "^3.5.33",
     "vuepress": "2.0.0-rc.28",
     "vuepress-theme-plume": "1.0.0-rc.196"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.464",
+    "@iconify/json": "^2.2.465",
     "@types/node": "^22.19.17",
     "@vercel/analytics": "^1.6.1",
     "@vueuse/core": "^13.9.0",
