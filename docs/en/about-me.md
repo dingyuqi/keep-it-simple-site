@@ -47,7 +47,7 @@ Computer Technology and Software Professional Technical Qualification.
 </LinkCard>
 
 ## Tech Stack
-<picture><img src="https://go-skill-icons.vercel.app/api/icons?i=go,py,gin,flask,redis,mysql,oracle,postgres,hadoop,kafka,etcd,grpc,gorm&perline=5"></picture>
+<picture><img src="https://go-skill-icons.vercel.app/api/icons?i=go,py,gin,flask,redis,mongodb,mysql,oracle,postgres,hadoop,hive,kafka,etcd,grpc,gorm&perline=5"></picture>
 
 ## Tools I Use
 <picture><img src="https://go-skill-icons.vercel.app/api/icons?i=vscode,goland,pycharm,dbeaver,git,github,kubernetes,docker,vercel,jenkins,grafana&perline=5"></picture>
