@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "description": "The goal is to explain computer knowledge in simple and easy-to-understand way.",
-  "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319",
+  "packageManager": "pnpm@10.33.2+sha512.a90faf6feeab71ad6c6e57f94e0fe1a12f5dcc22cd754db40ae9593eb6a3e0b6b12e3540218bb37ae083404b1f2ce6db2a4121e979829b4aff94b99f49da1cf8",
   "author": "dingyuqi <dingyq2023@gmail.com>",
   "license": "MIT",
   "engines": {
@@ -27,10 +27,10 @@
     "typescript": "^5.9.3",
     "vue": "^3.5.33",
     "vuepress": "2.0.0-rc.28",
-    "vuepress-theme-plume": "1.0.0-rc.196"
+    "vuepress-theme-plume": "1.0.0-rc.198"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.465",
+    "@iconify/json": "^2.2.467",
     "@types/node": "^22.19.17",
     "@vercel/analytics": "^1.6.1",
     "@vueuse/core": "^13.9.0",
