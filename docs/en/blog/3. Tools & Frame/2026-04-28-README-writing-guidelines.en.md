@@ -3,13 +3,16 @@ title: How to Write a Standard and Complete README?
 cover: /cover/readme.jpg
 tags:
   - Backend
-permalink: /article/how-to-write-a-standard-and-complete-readme-file/
+permalink: /en/article/how-to-write-a-standard-and-complete-readme-file/
 createTime: 2026/04/28 17:27:46
 ---
 As a programmer, writing a `README` for your own project or repository is an inevitable task. A good, standardized `README` file allows others to quickly and accurately understand your repository's code, install and use it rapidly, and know how to collaborate with you when necessary, which greatly helps in the dissemination of open-source projects.
+<!-- more -->
 
 So, how do you write a standardized and concise `README` file? What sections should a standard `README` file have? If you have these same questions, please read this article carefully; I believe it will be of great help to you.
-<!-- more -->
+
+
+![How to Write a Standard and Complete README?](/cover/readme.jpg)
 
 ## When to Write?
 The `README` file must be prepared before anyone else can access the project or repository. Creating a `README` file at the same time as a new project is a good development habit; it should be the first file submitted for any project repository.
