@@ -21,12 +21,12 @@ $$
 Based on this formula, we can calculate the following table. It is easy to find that when we use an even number of nodes, we can actually achieve the same fault tolerance by using fewer odd nodes.
 
 | Cluster size | Quorum | Number of nodes that can tolerate downtime | Fault tolerance |
-| -------- | ------ | ------------------ | -------- |
-| 3 nodes | 2 | 1 | High |
-| 4 nodes | 3 | 1 | No improvement |
-| 5 nodes | 3 | 2 | Higher |
-| 6 nodes | 4 | 2 | No improvement |
-| 7 nodes | 4 | 3 | Very high |
+| ------------ | ------ | ------------------------------------------ | --------------- |
+| 3 nodes      | 2      | 1                                          | High            |
+| 4 nodes      | 3      | 1                                          | No improvement  |
+| 5 nodes      | 3      | 2                                          | Higher          |
+| 6 nodes      | 4      | 2                                          | No improvement  |
+| 7 nodes      | 4      | 3                                          | Very high       |
 
 Obviously, when using an odd number of nodes, we will get the following benefits.
 
