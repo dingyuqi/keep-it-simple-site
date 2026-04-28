@@ -1,7 +1,8 @@
 ---
 title: How to Write a Standard and Complete README?
+cover: /cover/readme.jpg
 tags:
-  - Go
+  - Backend
 permalink: /article/how-to-write-a-standard-and-complete-readme-file/
 createTime: 2026/04/28 17:27:46
 ---
