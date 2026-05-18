@@ -1,4 +1,5 @@
 import path from "node:path";
+import { allowedNodeEnvironmentFlags } from "node:process";
 import type { Theme } from "vuepress";
 import { plumeTheme } from "vuepress-theme-plume";
 
@@ -65,4 +66,9 @@ export const theme: Theme = plumeTheme({
 		reactionsEnabled: true,
 		inputPosition: "top",
 	},
+	plugins: {
+		markdownPower: {
+			imageSize: "all",
+		},
+	}
 });
