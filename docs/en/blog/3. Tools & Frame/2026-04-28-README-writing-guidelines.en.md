@@ -129,14 +129,17 @@ I believe you have seen many animations, avatars, or other beautified parts when
 
 
 1.  [Readme Typing SVG](https://readme-typing-svg.demolab.com/demo/) : Generates an animation that prints out a specified sentence letter by letter.
+
       ::: window title="Typing SVG"
       [![](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=This+is+a+demo+of+Readme+Typing+SVG.)]( https://git.io/typing-svg )
       :::
 2.  [Profile Header Generator](https://leviarista.github.io/github-profile-header-generator/) : Can generate header images to emphasize the `README` title or for decoration.
+
       ::: window title="github header image"
       ![](/illustration/github-header-image.png)
       :::
 3.  [Skill Icons](https://github.com/lelouchfr/skill-icons) : Can use code to insert common tech stack logos into markdown files, often used to mark some technologies used by the repo.
+
       ::: window title="Skill Icons"
       ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=js,html,css,wasm)
       :::
