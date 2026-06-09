@@ -16,6 +16,8 @@ export const theme: Theme = plumeTheme({
 		lineNumbers: true,
 		whitespace: true,
 		collapsedLines: 20,
+		renderIndentGuides: true,
+		colorizedBrackets: true,
 	},
 	bulletin: {
 		layout: "top-right",
