@@ -2,11 +2,9 @@
 pageLayout: home
 externalLinkIcon: false
 config:
-  - type: banner
-    banner: "/back-ground/wave.png"
-    bannerMask:
-      light: 0.1
-      dark: 0.3
+  - type: hero
+    full: true
+    effect: liquid-ether
     hero:
       name: 丁语琪
       tagline: Keep It Simple
