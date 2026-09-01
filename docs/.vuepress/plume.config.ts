@@ -41,5 +41,5 @@ export default defineThemeConfig({
 
         },
     },
-
+    readAid: 'mask',
 })
