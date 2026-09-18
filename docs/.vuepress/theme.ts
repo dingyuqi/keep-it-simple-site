@@ -1,5 +1,4 @@
 import path from "node:path";
-import { allowedNodeEnvironmentFlags } from "node:process";
 import type { Theme } from "vuepress";
 import { plumeTheme } from "vuepress-theme-plume";
 
@@ -29,8 +28,8 @@ export const theme: Theme = plumeTheme({
 	search: {
 		provider: "algolia",
 		appId: "KFGYVIHG31",
-		apiKey: "c78d52bca994ea6b299b4bffb41c98a2",
-		indexName: "dingyuqi",
+		apiKey: "21ac64341916b8d8018d8aba68058988",
+		indices: ["dingyuqi"],
 	},
 	markdown: {
 		abbr: true,
