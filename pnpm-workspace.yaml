@@ -2,10 +2,10 @@ allowBuilds:
   '@parcel/watcher': false
   esbuild: false
 minimumReleaseAgeExclude:
-  - '@vuepress-plume/plugin-fonts@1.0.0-rc.207 || 1.0.0-rc.208'
-  - '@vuepress-plume/plugin-search@1.0.0-rc.207 || 1.0.0-rc.208'
-  - vuepress-plugin-md-power@1.0.0-rc.207 || 1.0.0-rc.208
-  - vuepress-theme-plume@1.0.0-rc.207 || 1.0.0-rc.208
+  - '@vuepress-plume/plugin-fonts@1.0.0-rc.207 || 1.0.0-rc.208 || 1.0.0-rc.213'
+  - '@vuepress-plume/plugin-search@1.0.0-rc.207 || 1.0.0-rc.208 || 1.0.0-rc.213'
+  - vuepress-plugin-md-power@1.0.0-rc.207 || 1.0.0-rc.208 || 1.0.0-rc.213
+  - vuepress-theme-plume@1.0.0-rc.207 || 1.0.0-rc.208 || 1.0.0-rc.213
   - '@vue/compiler-core@3.5.43'
   - '@vue/compiler-dom@3.5.43'
   - '@vue/compiler-sfc@3.5.43'
