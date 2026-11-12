@@ -42,4 +42,6 @@ export default defineThemeConfig({
         },
     },
     readAid: 'mask',
+    linkPreview: true,
+    relatedPosts: true,
 })
