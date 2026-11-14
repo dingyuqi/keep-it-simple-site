@@ -77,7 +77,7 @@ Each data object selects the machine closest to it in a clockwise direction for 
 
 The above has completed the calculation process of the entire Consistent Hash Algorithm. Next, let's take a look at the two scenarios mentioned at the beginning of the article: what changes will occur in the mapping between data and machines in adding machine nodes and deleting machine nodes.
 
-### Adding machine nodes
+### Adding machine nodes {#adding-machine-nodes}
 Now add a machine $c_4$, and get the integer $t_4$ after taking the Hash value modulo, and add it to the Hash ring.
 
 ![Hash ring after adding machine nodes](/illustration/hash-ring-add-server.png)
@@ -93,7 +93,7 @@ Similarly, if we reduce a machine $c_1$, after reallocating the machines, we fin
 
 ==Load imbalance==
 
-This is a problem that consistent hashing can easily encounter. Generally speaking, we hope that data is evenly distributed on all machines, including after adding or removing machines. But observing the example of [adding nodes](/article/vpa4ql0t/#Adding machine nodes ) mentioned earlier, after adding machine $c_4$, it only shares the pressure of $c_2$. We can imagine that if we add node $c_5$ again, unfortunately the hash value of the new node falls between $t_4$ and $t_2$ again, Then the newly added nodes cannot be assigned any data. **It can be seen that adding machine nodes may not necessarily reduce the pressure of data load.**
+This is a problem that consistent hashing can easily encounter. Generally speaking, we hope that data is evenly distributed on all machines, including after adding or removing machines. But observing the example of [adding nodes](#adding-machine-nodes) mentioned earlier, after adding machine $c_4$, it only shares the pressure of $c_2$. We can imagine that if we add node $c_5$ again, unfortunately the hash value of the new node falls between $t_4$ and $t_2$ again, Then the newly added nodes cannot be assigned any data. **It can be seen that adding machine nodes may not necessarily reduce the pressure of data load.**
 
 So how to solve it?
 

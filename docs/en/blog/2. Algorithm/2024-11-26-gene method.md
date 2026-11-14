@@ -103,5 +103,5 @@ Among them, the replacement method has the risk of ID duplication, while the spl
 ::: note Further reading
 When sharding, we can use the gene method to divide the data into a specified number of partitions. However, if the amount of data continues to grow and the original number of shards becomes insufficient to support the business, we may face the situation of increasing the number of shards.
 
-The increase in the number of partitions means that the original partitioning according to the Hash modulus operation will change, which may involve a large amount of data migration. Data migration not only consumes resources, but also may cause system unavailability and increase additional network pressure. For this problem, we can solve it through the [consistent Hash algorithm](/article/vpa4ql0t/) .
+The increase in the number of partitions means that the original partitioning according to the Hash modulus operation will change, which may involve a large amount of data migration. Data migration not only consumes resources, but also may cause system unavailability and increase additional network pressure. For this problem, we can solve it through the [consistent Hash algorithm](../../../article/vpa4ql0t/) .
 :::

@@ -21,19 +21,19 @@ Please do not lower than this configuration during the installation process, so 
 
 The whole installation process includes the following major links. If you have already installed some modules, you can skip this part.
 ::: steps
-1.  [Install Ubuntu16.04](/en/article/orb-slam2-installation-guide/#install-ubuntu16-04)
+1.  [Install Ubuntu16.04](#install-ubuntu16-04)
 
-2.  [Install ROS](/en/article/orb-slam2-installation-guide/#install-ros)
+2.  [Install ROS](#install-ros)
 
-3.  [Install ORB-SLAM algorithm in INDEMIND](/en/article/orb-slam2-installation-guide/#install-the-orb-slam-algorithm-in-indemind)
+3.  [Install ORB-SLAM algorithm in INDEMIND](#install-the-orb-slam-algorithm-in-indemind)
 :::
 
-## Install Ubuntu16.04
+## Install Ubuntu16.04 {#install-ubuntu16-04}
 IDEMIND binocular camera can match Ubuntu18.04 and Ubuntu16.04 versions of Ubuntu, but it is best to use Ubuntu16.04 version.
 
 Because I installed it too many times, I forgot to take screenshots. For detailed process, please refer to this article: [Install Ubuntu 16.04 desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop-1604#1-overview)
 
-## Install ROS
+## Install ROS {#install-ros}
 ::: info References
 1.  [Install ROS kinetic on Ubuntu16.04](https://blog.csdn.net/softimite_zifeng/article/details/78632211)
 2.  [ROS kinetic official website](http://wiki.ros.org/kinetic/Installation/Ubuntu)
@@ -142,16 +142,16 @@ Friends with the ability can go directly to the [ROS kinetic official website](h
     ![ROS node information](/illustration/rqt-graph-success.png)
 :::
 
-## Install The ORB-SLAM Algorithm In INDEMIND
+## Install The ORB-SLAM Algorithm In INDEMIND {#install-the-orb-slam-algorithm-in-indemind}
 ::: note The following process is mostly a record of the installation operation process under the Ubuntu18.04 version. The second installation of the Ubuntu16.04 version is slightly different. The differences are reflected in the form of annotations, and there is no screenshot record.
 :::
 
 The algorithm for installing this camera is divided into the following main steps:
-1.  [Configure the environment](/article/2iezf70h/#Configure the environment)
-2.  [Install the SDK dependent environment](/article/2iezf70h/#Install the SDK dependent environment)
-3.  [Install the SDK](/article/2iezf70h/#Install the SDK)
+1.  [Configure the environment](#configure-the-environment)
+2.  [Install the SDK dependent environment](#install-sdk-dependencies)
+3.  [Install the SDK](#install-sdk)
 
-### Configure The Environment
+### Configure The Environment {#configure-the-environment}
 #### Install Pangolin
 ::: info References
 1.  [ORB_SLAM2 of Pangolin Installation and Problem Solving](https://www.cnblogs.com/liufuqiang/p/5618335.html)
@@ -380,7 +380,7 @@ sudo make install
     ```
 :::
 
-### Install SDK dependencies
+### Install SDK dependencies {#install-sdk-dependencies}
 ::: steps
 1.  Install google-glog and gflags.
 
@@ -401,7 +401,7 @@ sudo make install
     ```
 :::
 
-### Install SDK
+### Install SDK {#install-sdk}
 ::: important
 Ubuntu16.04 must be compiled with GCC5.4, otherwise the link may fail.
 :::
