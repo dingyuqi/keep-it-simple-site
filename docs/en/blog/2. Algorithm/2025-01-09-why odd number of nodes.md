@@ -9,7 +9,7 @@ createTime: 2025/01/09 10:42:53
 As a backend engineer, I often deal with various distributed systems in my daily work, such as ETCD, Redis, k8s, etc. When deploying these distributed clusters, we usually set the number of nodes to an odd number, which seems to be a conventional rule. But why? In addition to the fact that even-numbered nodes are prone to voting tie, are there other reasons?
 <!-- more -->
 
-::: note If you don't know much about distributed consensus algorithms, you can read other article of mine: [Detailed Explanation of Raft Protocol](/en/article/b7r3zg4p/) first.
+::: note If you don't know much about distributed consensus algorithms, you can read other article of mine: [Detailed Explanation of Raft Protocol](../b7r3zg4p/) first.
 :::
 
 In the Raft protocol, even if some nodes fail, the cluster can still reach a consensus. Then the voting process requires the agreement of ==most== nodes. At this time, we can derive a Quorum formula:

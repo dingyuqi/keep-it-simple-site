@@ -63,7 +63,7 @@ Please make sure to update tests as appropriate.
 :::
 
 ### Essential Elements
-Since every project is different, it is difficult to give a standard `README` format; you must adjust the template according to your project. Although generally, a `README` is not very long, when you find that your `README` length is too long, you should consider [other documentation forms](/article/07fei8cy/#其他的文件形式) instead of deleting content from the `README`. Because a more detailed `README` is always better than one that's too short, try to ensure that all information others need to know is included in the `README`.
+Since every project is different, it is difficult to give a standard `README` format; you must adjust the template according to your project. Although generally, a `README` is not very long, when you find that your `README` length is too long, you should consider [other documentation forms](#other-documentation-forms) instead of deleting content from the `README`. Because a more detailed `README` is always better than one that's too short, try to ensure that all information others need to know is included in the `README`.
 
 Below are some essential sections in a `README` for your reference.
 
@@ -116,7 +116,7 @@ If you no longer have the energy or plans to continue maintaining this project, 
 #### Changelog
 You can add a link in the `README` that jumps to the Changelog, documenting in detail the differences between project versions and precautions.
 
-## Other Documentation Forms
+## Other Documentation Forms {#other-documentation-forms}
 While a `README` file is essential for a project, many times it is not enough. There are many other forms of documentation that will help you better explain and promote your open-source project.
 -   [Daux.io](https://daux.io/)
 -   [Docusaurus](https://docusaurus.io/)

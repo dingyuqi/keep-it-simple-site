@@ -11,11 +11,11 @@ Centrality algorithms are used to understand the influence of specific nodes in 
 <!-- more -->
 
 This article will introduce the following algorithms:
--   [Degree Centrality Algorithm](/en/article/centrality-algorithms/#degree-centrality) : It can be used as a benchmark indicator of connectivity.
--   [Closeness Centrality Algorithm](/en/article/centrality-algorithms/#closeness-centrality) : It is used to measure the centrality of a node in a group.
--   [Betweenness Centrality Algorithm](/en/article/centrality-algorithms/#betweenness-centrality) : Used to find control points in a graph.
+-   [Degree Centrality Algorithm](#degree-centrality) : It can be used as a benchmark indicator of connectivity.
+-   [Closeness Centrality Algorithm](#closeness-centrality) : It is used to measure the centrality of a node in a group.
+-   [Betweenness Centrality Algorithm](#betweenness-centrality) : Used to find control points in a graph.
 
-## Degree Centrality
+## Degree Centrality {#degree-centrality}
 Used to measure the number of relationships a node has. The larger the value, the higher its centrality.
 -   Input: `G = ( V, E )`.
 -   Output: Each node and its degree centrality value.
@@ -36,7 +36,7 @@ Where:
 -   This indicator calculation does not involve attributes, only the degree of the graph structure.
 -   Only the degree under the same label is calculated.
 
-## Closeness Centrality
+## Closeness Centrality {#closeness-centrality}
 Used to discover nodes that can efficiently propagate information through subgraphs, The higher the value, the shorter the distance between it and other nodes. This algorithm can be used when you need to know which node has the fastest propagation speed.
 -   Input: `G = ( V, E )`.
 -   Output: Each node and its closeness centrality.
@@ -72,7 +72,7 @@ Where:
 -   $n$ represents the number of nodes in the same component as $u$.
 -   $d ( u, v )$ represents another node The shortest distance from $v$ to $u$.
 :::
-## Betweenness Centrality
+## Betweenness Centrality {#betweenness-centrality}
 Used to detect the degree of influence of a node on the information flow or resources in the graph, usually used to find nodes that bridge one part of the graph with another.
 -   Input: `G = ( V, E )`.
 -   Output: Each node and its betweenness centrality value.
